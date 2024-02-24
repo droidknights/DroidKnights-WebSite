@@ -1,3 +1,20 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": ["airbnb", "next/core-web-vitals", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "printWidth": 120,
+        "plugins": ["prettier-plugin-tailwindcss"]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".jsx", ".tsx"] }
+    ],
+    "no-unused-vars": "warn",
+    "no-undef": "off"
+  }
 }
