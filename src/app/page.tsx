@@ -21,6 +21,10 @@ export default function Home() {
     }, 1000);
     return () => clearInterval(interval);
   }, []);
+
+  const countLabelClass = "text-sm text-grey md:text-base xl:text-xl";
+  const countNumberClass = "text-[33px] font-black text-primary-blue md:text-4xl xl:text-[50px]";
+
   return (
     <main className="flex min-h-screen flex-col items-center py-[150px] md:pb-[70px] md:pt-0 xl:pb-[140px]">
       <div className="mb-[40px] hidden md:block xl:mb-[80px]">
@@ -35,7 +39,7 @@ export default function Home() {
       </div>
       <div className="mb-20 flex flex-col items-center text-center md:hidden">
         <h1 className="font-semibold text-primary-blue">Droid Knights 2024</h1>
-        <div className="mx-10 mb-5 text-4xl font-black">Comming Soon</div>
+        <div className="mx-10 mb-5 text-[45px] font-black">Coming Soon</div>
         <div className="mx-[45px]">
           <Image
             src="/characters.png"
@@ -48,21 +52,21 @@ export default function Home() {
         </div>
       </div>
       {countdown ? (
-        <div className="mx-10 mb-6 grid grid-cols-7 gap-x-3 gap-y-0.5 text-center text-4xl font-black md:mb-5 xl:mb-10 xl:gap-x-4 xl:text-5xl">
-          <div className="text-base font-normal text-grey xl:text-xl">Days</div>
+        <div className="mx-10 mb-6 grid grid-cols-7 justify-items-center gap-x-2.5 gap-y-0.5 md:mb-5 md:gap-x-3 xl:mb-10 xl:gap-x-4 xl:gap-y-1 ">
+          <div className={countLabelClass}>Days</div>
           <div />
-          <div className="text-base font-normal text-grey xl:text-xl">Hours</div>
+          <div className={countLabelClass}>Hours</div>
           <div />
-          <div className="text-base font-normal text-grey xl:text-xl">Minutes</div>
+          <div className={countLabelClass}>Minutes</div>
           <div />
-          <div className="text-base font-normal text-grey xl:text-xl">Seconds</div>
-          <div className="text-primary-blue">{countdown?.days}</div>
-          <div className="text-primary-blue">:</div>
-          <div className="text-primary-blue">{countdown?.hours}</div>
-          <div className="text-primary-blue">:</div>
-          <div className="text-primary-blue">{countdown?.minutes}</div>
-          <div className="text-primary-blue">:</div>
-          <div className="text-primary-blue">{countdown?.seconds}</div>
+          <div className={countLabelClass}>Seconds</div>
+          <div className={countNumberClass}>{countdown?.days}</div>
+          <div className={countNumberClass}>:</div>
+          <div className={countNumberClass}>{countdown?.hours}</div>
+          <div className={countNumberClass}>:</div>
+          <div className={countNumberClass}>{countdown?.minutes}</div>
+          <div className={countNumberClass}>:</div>
+          <div className={countNumberClass}>{countdown?.seconds}</div>
         </div>
       ) : (
         <div />

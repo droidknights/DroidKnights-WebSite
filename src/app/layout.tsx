@@ -15,11 +15,12 @@ export default function RootLayout({
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.droidknights.dev"),
   title: "Droid Knights 2024",
   description: "드로이드나이츠는 안드로이드 개발자들의 경험을 공유하고 만남의 장을 만드는 컨퍼런스입니다.",
   openGraph: {
     title: "Droid Knights 2024",
     description: "드로이드나이츠는 안드로이드 개발자들의 경험을 공유하고 만남의 장을 만드는 컨퍼런스입니다.",
-    images: "/og_image.png",
+    images: [{ url: "/og_image.png" }],
   },
 };
