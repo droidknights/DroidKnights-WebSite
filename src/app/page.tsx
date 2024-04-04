@@ -4,20 +4,24 @@ import { differenceInDays, intervalToDuration } from "date-fns";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+const getCountdown = () => {
+  const start = new Date();
+  const end = new Date(2024, 5, 11, 9, 0, 0); // 2024. 6. 11. 09:00:00
+  const days = differenceInDays(end, start);
+  const { hours, minutes, seconds } = intervalToDuration({ start, end });
+  return {
+    days,
+    hours: hours || 0,
+    minutes: minutes || 0,
+    seconds: seconds || 0,
+  };
+};
+
 export default function Home() {
   const [countdown, setCountdown] = useState<Countdown>();
   useEffect(() => {
     const interval = setInterval(() => {
-      const start = new Date();
-      const end = new Date(2024, 6, 11, 9, 0, 0);
-      const days = differenceInDays(end, start);
-      const { hours, minutes, seconds } = intervalToDuration({ start, end });
-      setCountdown({
-        days,
-        hours: hours || 0,
-        minutes: minutes || 0,
-        seconds: seconds || 0,
-      });
+      setCountdown(getCountdown());
     }, 1000);
     return () => clearInterval(interval);
   }, []);
