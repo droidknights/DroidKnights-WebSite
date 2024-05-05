@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "primary-blue": "#6dece5",
-        grey: "#777777",
+        "blue-light": "#46A7E0",
+        blue: "#4CBCFF",
+        "grey-light": "#888888",
+        grey: "#333333",
+      },
+      screens: {
+        xl: "1366px",
       },
     },
   },
