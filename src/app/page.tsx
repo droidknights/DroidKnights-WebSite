@@ -2,6 +2,7 @@ import { Location } from "./_components/Location";
 import { Qna } from "./_components/Qna";
 import { Session } from "./_components/Session";
 import { Sponsor } from "./_components/Sponsor";
+import { Terms } from "./_components/Terms";
 import { Ticket } from "./_components/Ticket";
 
 function Header() {
@@ -31,14 +32,17 @@ function Description() {
     <div className="flex flex-col items-center px-6 md:px-20">
       <img className="absolute mt-10 hidden md:block" src="/arrow_down.svg" />
       <div className="py-20 text-center md:py-40">
-        <div className="mb-4 text-2xl font-bold leading-normal md:mb-8 md:text-5xl">
-          <p className="md:mb-4">대한민국 최대</p>
-          <p className="md:mb-4">안드로이드 개발자들만을 위한</p>
-          <p>드로이드나이츠 2024</p>
+        <div className="mb-4 text-2xl font-bold leading-normal md:text-5xl md:leading-normal">
+          대한민국 최대
+          <br />
+          안드로이드 개발자들만을 위한
+          <br />
+          드로이드나이츠 2024
         </div>
-        <div className="text-xl font-medium leading-normal md:text-4xl">
-          <p className="md:mb-4">주니어부터 시니어까지 모두가 공감하고</p>
-          <p>즐길 수 있는 지식의 장으로 만들고자 합니다.</p>
+        <div className="text-xl font-medium leading-normal md:text-4xl md:leading-normal">
+          주니어부터 시니어까지 모두가 공감하고
+          <br />
+          즐길 수 있는 지식의 장으로 만들고자 합니다.
         </div>
       </div>
     </div>
@@ -78,6 +82,7 @@ export default function Home() {
       <Location />
       <Sponsor />
       <Qna />
+      <Terms />
       <Footer />
     </main>
   );

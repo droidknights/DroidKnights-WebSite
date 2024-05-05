@@ -16,7 +16,7 @@ function SponsorGroup(level: Level, last: boolean) {
 
   const stars = [];
   for (let idx = 0; idx < countStar; idx++) {
-    stars.push(<img src="/star.svg" alt="sponsor star" />);
+    stars.push(<img src="/star.svg" alt="sponsor star" key={idx} />);
   }
 
   return (
