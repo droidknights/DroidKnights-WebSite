@@ -27,12 +27,15 @@ export function Terms() {
           <br />
           차별없이 참여할 수 있도록 노력할 것을 약속 해주세요.
         </p>
-        <button
-          type="button"
-          className="flex h-[39px] w-[138px] items-center justify-center rounded bg-white text-xs font-bold text-black md:h-[64px] md:w-[300px] md:text-xl md:font-semibold"
+        <a
+          href="https://maryang.notion.site/2024-f4c593c4be174647b5b3aa28a0f52490?pvs=4"
+          target="_blank"
+          className="w-[138px] md:w-[300px]"
         >
-          행동강령 살펴보기→
-        </button>
+          <div className="flex h-[39px] items-center justify-center rounded bg-white text-xs font-bold text-black md:h-[64px] md:text-xl md:font-semibold">
+            행동강령 살펴보기 →
+          </div>
+        </a>
       </div>
     </div>
   );
