@@ -1,85 +1,93 @@
-"use client";
+import Link from "next/link";
+import { LastEvent } from "./_components/LastEvent";
+import { Location } from "./_components/Location";
+import { Sponsor } from "./_components/Sponsor";
+import { Terms } from "./_components/Terms";
+import { Ticket } from "./_components/Ticket";
+import { SessionCard } from "./_components/session/SessionCard";
+import { QnaCard } from "./_components/QnaCard";
 
-import { differenceInDays, intervalToDuration } from "date-fns";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+function Header() {
+  return (
+    <div className="relative">
+      <img
+        src="/banner_text.png"
+        alt="droidknights 2024 banner text"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 px-4"
+      />
+      <div className="fixed flex w-full justify-between p-3 backdrop-blur md:px-10 md:py-5 xl:px-20">
+        <img src="/logo.svg" alt="droidknights 2024 logo" />
+        <Link href="https://festa.io/events/4990" target="_blank">
+          <div className="cursor-point rounded bg-white px-4 py-2 text-xs font-semibold md:px-3 md:py-[10px] md:text-sm">
+            페스타 바로가기→
+          </div>
+        </Link>
+      </div>
+      <img src="/banner_bg.png" alt="droidknights 2024 banner" className="h-[640px] w-screen object-cover" />
+    </div>
+  );
+}
 
-const getCountdown = () => {
-  const start = new Date();
-  const end = new Date(2024, 5, 11, 9, 0, 0); // 2024. 6. 11. 09:00:00
-  const days = differenceInDays(end, start);
-  const { hours, minutes, seconds } = intervalToDuration({ start, end });
-  return {
-    days,
-    hours: hours || 0,
-    minutes: minutes || 0,
-    seconds: seconds || 0,
-  };
-};
+function Description() {
+  return (
+    <div className="flex justify-center">
+      <div className="flex max-w-[1366px] flex-col items-center px-6 md:px-20">
+        <img className="absolute mt-10 hidden md:block" src="/arrow_down.svg" />
+        <div className="py-20 text-center md:py-40">
+          <div className="mb-4 text-2xl font-bold leading-normal md:text-5xl md:leading-normal">
+            대한민국 최대
+            <br />
+            안드로이드 개발자들만을 위한
+            <br />
+            드로이드나이츠 2024
+          </div>
+          <div className="text-xl font-medium leading-normal md:text-4xl md:leading-normal">
+            주니어부터 시니어까지 모두가 공감하고
+            <br />
+            즐길 수 있는 지식의 장으로 만들고자 합니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="items-center justify-between bg-black px-10 py-9 md:flex md:py-10 xl:px-20">
+      <div className="mb-3 items-center text-center md:mb-0 md:flex">
+        <p className="text-xs text-white md:text-sm">Copyright DroidKnights 2024</p>
+        <span className="mx-3 hidden text-xs text-white md:block md:text-sm">|</span>
+        <p className="text-xs text-white md:text-sm">All Rights Reserved</p>
+      </div>
+      <div className="flex items-center justify-center">
+        <a href="https://www.instagram.com/droid_knights/" target="_blank" className="mr-3">
+          <img src="/social/instagram.svg" alt="instagram" />
+        </a>
+        <a href="https://www.facebook.com/droidknights" target="_blank" className="mr-3">
+          <img src="/social/facebook.svg" alt="facebook" />
+        </a>
+        <a href="https://www.youtube.com/@DroidKnights" target="_blank" className="mr-3">
+          <img src="/social/youtube.svg" alt="youtube" />
+        </a>
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
-  const [countdown, setCountdown] = useState<Countdown>();
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCountdown(getCountdown());
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const countLabelClass = "text-sm text-grey md:text-base xl:text-xl";
-  const countNumberClass = "text-[33px] font-black text-primary-blue md:text-4xl xl:text-[50px]";
-
   return (
-    <main className="flex min-h-screen flex-col items-center py-[150px] md:pb-[70px] md:pt-0 xl:pb-[140px]">
-      <div className="mb-[40px] hidden md:block xl:mb-[80px]">
-        <Image
-          src="/banner.png"
-          alt="droidknights 2024 logo"
-          width={0}
-          height={0}
-          sizes="100vw"
-          className=" w-screen"
-        />
-      </div>
-      <div className="mb-20 flex flex-col items-center text-center md:hidden">
-        <h1 className="font-semibold text-primary-blue">Droid Knights 2024</h1>
-        <div className="mx-10 mb-5 text-[45px] font-black">Coming Soon</div>
-        <div className="mx-[45px]">
-          <Image
-            src="/characters.png"
-            alt="droidknights 2024 characters"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-screen"
-          />
-        </div>
-      </div>
-      {countdown ? (
-        <div className="mx-10 mb-6 grid grid-cols-7 justify-items-center gap-x-2.5 gap-y-0.5 md:mb-5 md:gap-x-3 xl:mb-10 xl:gap-x-4 xl:gap-y-1 ">
-          <div className={countLabelClass}>Days</div>
-          <div />
-          <div className={countLabelClass}>Hours</div>
-          <div />
-          <div className={countLabelClass}>Minutes</div>
-          <div />
-          <div className={countLabelClass}>Seconds</div>
-          <div className={countNumberClass}>{countdown?.days}</div>
-          <div className={countNumberClass}>:</div>
-          <div className={countNumberClass}>{countdown?.hours}</div>
-          <div className={countNumberClass}>:</div>
-          <div className={countNumberClass}>{countdown?.minutes}</div>
-          <div className={countNumberClass}>:</div>
-          <div className={countNumberClass}>{countdown?.seconds}</div>
-        </div>
-      ) : (
-        <div />
-      )}
-      <div className="flex flex-col items-center justify-center text-center font-semibold md:flex-row">
-        <h2 className="mb-2 md:mb-0 xl:text-2xl">2024. 6. 11. TUE</h2>
-        <div className="mx-3 hidden h-4 w-px bg-grey md:block xl:h-6" />
-        <h2 className="xl:text-2xl">코엑스 3층 E홀 컨퍼런스룸</h2>
-      </div>
+    <main>
+      <Header />
+      <Description />
+      <SessionCard />
+      <Ticket />
+      <Location />
+      <Sponsor />
+      <QnaCard />
+      <LastEvent />
+      <Terms />
+      <Footer />
     </main>
   );
 }
