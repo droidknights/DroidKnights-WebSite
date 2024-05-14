@@ -25,10 +25,10 @@ function SponsorGroup(level: Level, last: boolean) {
       <p className="mb-3 text-xl font-bold md:text-4xl">{level}</p>
       <div className="mb-10 h-px w-full bg-black" />
       <div className="grid w-full grid-cols-2 gap-3">
-        <div className="flex h-[91px] items-center justify-center rounded-[5px] bg-white px-3 md:h-[136px]">
+        <div className="flex h-[91px] items-center justify-center rounded-[5px] bg-white px-4 md:h-[136px] md:px-10 xl:px-[120px]">
           <img src={`/sponsors/${logos[0]}`} alt="sponsor logo" />
         </div>
-        <div className="flex h-[91px] items-center justify-center rounded-[5px] bg-white px-3 md:h-[136px]">
+        <div className="flex h-[91px] items-center justify-center rounded-[5px] bg-white px-4 md:h-[136px] md:px-10 xl:px-[120px]">
           <img src={`/sponsors/${logos[1]}`} alt="sponsor logo" />
         </div>
       </div>
