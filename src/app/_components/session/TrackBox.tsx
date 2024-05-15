@@ -27,9 +27,9 @@ function SessionBox({ session }: { session: Session }) {
   );
 }
 
-export function TrackBox({ track }: { track: Track }) {
+export function TrackBox({ track, className }: { track: Track; className?: string }) {
   return (
-    <div className="w-full">
+    <div className={`w-full ${className}`}>
       <BreakTimeBox time="09:30 - 10:40" title="행사 등록" />
       <DividerSession />
       {track.sessions.map((session, index) => (

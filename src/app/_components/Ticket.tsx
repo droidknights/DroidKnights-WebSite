@@ -6,11 +6,7 @@ export function Ticket() {
       <div className="flex max-w-[1366px] flex-col items-center px-6 py-20 text-center md:px-10 md:py-40 xl:px-40">
         <div className="mb-[26px] text-center md:mb-[72px]">
           <p className="mb-4 text-sm font-medium text-blue-light md:text-2xl">Ticket</p>
-          <p className="mb-2 text-2xl font-bold text-white md:mb-4 md:text-5xl xl:text-6xl">
-            행사장 입장부터, 한정 굿즈까지
-          </p>
-          <p className="mb-px font-medium text-white/80 md:text-2xl">페스타 오픈 | 5월 7일 오후 1시</p>
-          <p className="font-medium text-white/80 md:text-2xl">티켓 오픈 | 5월 14일 오후 1시</p>
+          <p className="text-2xl font-bold text-white md:text-5xl xl:text-6xl">행사장 입장부터, 한정 굿즈까지</p>
         </div>
         <div className="grid w-full grid-cols-2 gap-3 md:gap-[18px] xl:gap-9">
           <div className="mr-3 rounded-[5px] bg-black/50 px-4 py-9 text-center md:py-[49px] xl:py-[46px]">
@@ -28,7 +24,7 @@ export function Ticket() {
         </div>
         <Link href="https://festa.io/events/4990" target="_blank" className="flex w-full justify-center">
           <div className="mb-2 mt-[26px] w-full rounded-[10px] bg-blue py-5 text-center font-semibold md:mb-3 md:mt-[72px] md:w-fit md:px-[144px] md:py-7 md:text-xl">
-            페스타 바로가기 →
+            티켓 구매하러 가기 →
           </div>
         </Link>
         <p className="text-sm font-medium text-grey-light md:text-xl">

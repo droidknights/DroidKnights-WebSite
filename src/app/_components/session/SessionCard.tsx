@@ -1,7 +1,8 @@
 "use client";
 
-import { track1, tracks } from "@/app/_interface/Sessions";
+import { tracks } from "@/app/_interface/Sessions";
 import { useState } from "react";
+import { SpecialSessionBox } from "./SpecialSessionBox";
 import { DividerSession, TrackBox } from "./TrackBox";
 
 function Tab({
@@ -43,47 +44,8 @@ export function SessionCard() {
           <Tab tabNumber={3} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
         </div>
         <DividerSession />
-        <TrackBox track={tracks[trackNumber - 1]} />
-        <div className="mt-10 text-left text-white md:mt-[72px]">
-          <div className="mb-4 text-2xl font-bold md:mb-6 md:text-5xl">특별 세션 지원자 모집</div>
-          <div className="mb-2 text-xl font-semibold md:mb-3 md:text-2xl">
-            1. 이력서 / 포트폴리오 지원자 모집 (
-            <a href="https://forms.gle/DdPw6bof4bW45LTz8" target="_blank" className="text-red-600">
-              지원하기
-            </a>
-            )
-          </div>
-          <div className="mb-4 md:mb-8 md:text-xl">
-            <p className="mb-0.5">
-              드로이드나이츠2024에서 여러분의 경력을 한 단계 업그레이드할 수 있는 특별한 기회를 제공합니다.
-            </p>
-            <p className="mb-0.5">
-              <b>이력서와 포트폴리오에 대한 전문적인 피드백을 받고 싶으신 분들을 위한 세션</b>을 마련했습니다.
-            </p>
-            <p className="mb-0.5">드로이드나이츠 운영진들이 직접 이력서/포트폴리오를 검토하고 피드백 드립니다.</p>
-            <p className="mb-0.5">
-              <b>선정되신 분들께는 드로이드나이츠 티켓을 제공해드립니다.</b> (굿즈 제외)
-            </p>
-          </div>
-          <div className="mb-2 text-xl font-semibold md:mb-3 md:text-2xl">
-            2. 라이트닝토크 지원자 모집 (
-            <a href="https://forms.gle/E7hdXx2UyGXR3AZh8" target="_blank" className="text-red-600">
-              지원하기
-            </a>
-            )
-          </div>
-          <div className="md:text-xl">
-            <p className="mb-0.5">발표 경험을 쌓고 싶지만 대규모 세션에서의 발표는 부담스럽다고 느끼시나요?</p>
-            <p className="mb-0.5">저희가 준비한 라이트닝 토크 세션에 주목해 주세요.</p>
-            <p className="mb-0.5">
-              이번 행사에서는 안드로이드 개발자 커뮤니티의 일원으로서, 단 10분 동안 자신의 경험, 지식, 아이디어를 공유할
-              수 있는 기회를 제공합니다.
-            </p>
-            <p className="mb-0.5">
-              <b>선정되신 분들께는 드로이드나이츠 티켓을 제공해드립니다.</b> (굿즈 제외)
-            </p>
-          </div>
-        </div>
+        <TrackBox track={tracks[trackNumber - 1]} className="mb-[72px]" />
+        <SpecialSessionBox />
       </div>
     </div>
   );
