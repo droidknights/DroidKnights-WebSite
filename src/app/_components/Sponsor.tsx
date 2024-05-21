@@ -38,14 +38,14 @@ function SponsorGroup(level: Level, last: boolean) {
 
 export function Sponsor() {
   return (
-    <div className="flex justify-center bg-blue/30">
+    <section className="flex justify-center bg-blue/30">
       <div className="flex max-w-[1366px] flex-col items-center px-6 py-20 md:px-10 md:py-40 xl:px-40">
-        <p className="mb-2 text-sm font-medium text-blue-light md:mb-4 md:text-2xl">SPONSOR</p>
-        <p className="mb-9 text-2xl font-bold md:mb-[72px] md:text-5xl xl:text-6xl">함께하는 기업</p>
+        <h2 className="mb-2 text-sm font-medium text-blue-light md:mb-4 md:text-2xl">SPONSOR</h2>
+        <h3 className="mb-9 text-2xl font-bold md:mb-[72px] md:text-5xl xl:text-6xl">함께하는 기업</h3>
         {SponsorGroup(Level.PLATINUM, false)}
         {SponsorGroup(Level.GOLD, false)}
         {SponsorGroup(Level.SILVER, true)}
       </div>
-    </div>
+    </section>
   );
 }

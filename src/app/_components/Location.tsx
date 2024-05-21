@@ -1,11 +1,11 @@
 export function Location() {
   return (
-    <div className="flex justify-center bg-blue">
+    <section className="flex justify-center bg-blue">
       <div className="flex max-w-[1366px] flex-col items-center px-6 py-20 text-center md:px-10 md:py-40 xl:px-40">
-        <p className="mb-2 text-sm font-medium text-white md:mb-4 md:text-2xl xl:mb-4">Location</p>
-        <p className="mb-4 text-2xl font-bold md:text-[52px] md:leading-none xl:text-6xl">
+        <h2 className="mb-2 text-sm font-medium text-white md:mb-4 md:text-2xl xl:mb-4">Location</h2>
+        <h3 className="mb-4 text-2xl font-bold md:text-[52px] md:leading-none xl:text-6xl">
           6월 11일, 코엑스에서 만나요
-        </p>
+        </h3>
         <div className="mb-9 items-center md:mb-[72px] md:flex">
           <div className="mb-2 flex items-center justify-center md:mb-0 md:mr-8">
             <img
@@ -37,6 +37,6 @@ export function Location() {
           </div>
         </a>
       </div>
-    </div>
+    </section>
   );
 }

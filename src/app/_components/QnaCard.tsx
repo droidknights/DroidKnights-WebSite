@@ -30,10 +30,10 @@ function Qna({ question, answer }: { question: string; answer: string }) {
 
 export function QnaCard() {
   return (
-    <div className="flex justify-center">
+    <section className="flex justify-center">
       <div className="flex max-w-[1366px] flex-col items-center px-6 py-20 md:px-10 md:py-40">
-        <p className="mb-2 text-sm font-medium text-blue-light md:mb-4 md:text-2xl">QnA</p>
-        <p className="mb-6 text-2xl font-bold md:mb-[72px] md:text-5xl xl:text-6xl">자주 묻는 질문</p>
+        <h2 className="mb-2 text-sm font-medium text-blue-light md:mb-4 md:text-2xl">QnA</h2>
+        <h3 className="mb-6 text-2xl font-bold md:mb-[72px] md:text-5xl xl:text-6xl">자주 묻는 질문</h3>
         <Divider />
         {qnaList.map((qna, index) => (
           <div key={qna.question} className="w-full">
@@ -42,6 +42,6 @@ export function QnaCard() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

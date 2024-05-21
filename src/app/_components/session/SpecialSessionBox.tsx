@@ -5,9 +5,9 @@ function Divider() {
 export function SpecialSessionBox() {
   return (
     <div className="mt-10 w-full md:mt-[72px]">
-      <div className="mb-9 mt-8 text-2xl font-bold text-white md:my-[72px] md:text-5xl xl:text-6xl">
+      <h3 className="mb-9 mt-8 text-2xl font-bold text-white md:my-[72px] md:text-5xl xl:text-6xl">
         특별 세션 지원자 모집
-      </div>
+      </h3>
       {/** 이력서 / 포트폴리오 */}
       <div className="relative mb-3 text-left md:mb-4">
         <div className="text-xl font-semibold text-blue-light md:hidden md:text-4xl">

@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className={fontPretendard.className}>{children}</body>
     </html>
   );
@@ -16,11 +16,13 @@ export default function RootLayout({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.droidknights.dev"),
-  title: "Droid Knights 2024",
-  description: "드로이드나이츠는 안드로이드 개발자들의 경험을 공유하고 만남의 장을 만드는 컨퍼런스입니다.",
+  title: "드로이드나이츠 2024",
+  description:
+    "대한민국 최대 안드로이드 개발자들만을 위한 컨퍼런스 드로이드나이츠 2024 입니다. 주니어부터 시니어까지 모두가 공감하고 즐길 수 있는 지식의 장으로 만들고자 합니다.",
   openGraph: {
-    title: "Droid Knights 2024",
-    description: "드로이드나이츠는 안드로이드 개발자들의 경험을 공유하고 만남의 장을 만드는 컨퍼런스입니다.",
+    title: "드로이드나이츠 2024",
+    description:
+      "대한민국 최대 안드로이드 개발자들만을 위한 컨퍼런스 드로이드나이츠 2024 입니다. 주니어부터 시니어까지 모두가 공감하고 즐길 수 있는 지식의 장으로 만들고자 합니다.",
     images: [{ url: "/og_image.png" }],
   },
 };

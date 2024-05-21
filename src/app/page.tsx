@@ -9,7 +9,7 @@ import { QnaCard } from "./_components/QnaCard";
 
 function Header() {
   return (
-    <div className="relative">
+    <section className="relative">
       <img
         src="/banner_text.png"
         alt="droidknights 2024 banner text"
@@ -24,37 +24,37 @@ function Header() {
         </Link>
       </div>
       <img src="/banner_bg.png" alt="droidknights 2024 banner" className="h-[640px] w-screen object-cover" />
-    </div>
+    </section>
   );
 }
 
 function Description() {
   return (
-    <div className="flex justify-center">
+    <section className="flex justify-center">
       <div className="flex max-w-[1366px] flex-col items-center px-6 md:px-20">
         <img className="absolute mt-10 hidden md:block" src="/arrow_down.svg" />
         <div className="py-20 text-center md:py-40">
-          <div className="mb-4 text-2xl font-bold leading-normal md:text-5xl md:leading-normal">
+          <h1 className="mb-4 text-2xl font-bold leading-normal md:text-5xl md:leading-normal">
             대한민국 최대
             <br />
             안드로이드 개발자들만을 위한
             <br />
             드로이드나이츠 2024
-          </div>
-          <div className="text-xl font-medium leading-normal md:text-4xl md:leading-normal">
+          </h1>
+          <h2 className="text-xl font-medium leading-normal md:text-4xl md:leading-normal">
             주니어부터 시니어까지 모두가 공감하고
             <br />
             즐길 수 있는 지식의 장으로 만들고자 합니다.
-          </div>
+          </h2>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 function Footer() {
   return (
-    <div className="items-center justify-between bg-black px-10 py-9 md:flex md:py-10 xl:px-20">
+    <section className="items-center justify-between bg-black px-10 py-9 md:flex md:py-10 xl:px-20">
       <div className="mb-3 items-center text-center md:mb-0 md:flex">
         <p className="text-xs text-white md:text-sm">Copyright DroidKnights 2024</p>
         <span className="mx-3 hidden text-xs text-white md:block md:text-sm">|</span>
@@ -71,7 +71,7 @@ function Footer() {
           <img src="/social/youtube.svg" alt="youtube" />
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 
