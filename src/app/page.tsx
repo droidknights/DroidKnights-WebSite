@@ -4,8 +4,9 @@ import { Location } from "./_components/Location";
 import { Sponsor } from "./_components/Sponsor";
 import { Terms } from "./_components/Terms";
 import { Ticket } from "./_components/Ticket";
-import { SessionCard } from "./_components/session/SessionCard";
+import { SessionCard } from "./_components/sessions/SessionsCard";
 import { QnaCard } from "./_components/QnaCard";
+import { SessionDetailPopup } from "./_components/sessions/track/SessionDetailPopup";
 
 function Header() {
   return (
@@ -78,16 +79,19 @@ function Footer() {
 export default function Home() {
   return (
     <main>
-      <Header />
-      <Description />
-      <SessionCard />
-      <Ticket />
-      <Location />
-      <Sponsor />
-      <QnaCard />
-      <LastEvent />
-      <Terms />
-      <Footer />
+      <div>
+        <Header />
+        <Description />
+        <SessionCard />
+        <Ticket />
+        <Location />
+        <Sponsor />
+        <QnaCard />
+        <LastEvent />
+        <Terms />
+        <Footer />
+      </div>
+      <div id="popup-root" />
     </main>
   );
 }
