@@ -23,6 +23,7 @@ function TextWithLineBreaks({ description }: { description: string }) {
 }
 
 export function SessionDetailPopup({ session, close }: { session: Session; close: () => void }) {
+  const company = session.detail?.company;
   return (
     <Portal selector="#popup-root">
       <div
@@ -42,7 +43,8 @@ export function SessionDetailPopup({ session, close }: { session: Session; close
           <div className="my-6 h-px w-full bg-[#c4c4c4]" />
           <div className="text-xl leading-normal">
             <p className="font-bold text-blue">
-              {session.speaker} | {session.detail?.company}
+              {session.speaker}
+              {company && ` | ${company}`}
             </p>
             <TextWithLineBreaks description={session.detail!.speakerDescription} />
           </div>
