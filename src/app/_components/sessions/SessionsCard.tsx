@@ -3,7 +3,7 @@
 import { tracks } from "@/app/_interface/Sessions";
 import { useState } from "react";
 import { SpecialSessionBox } from "./SpecialSessionBox";
-import { DividerSession, TrackBox } from "./TrackBox";
+import { DividerSession, TrackBox } from "./track/TrackBox";
 
 function Tab({
   tabNumber,
@@ -44,8 +44,7 @@ export function SessionCard() {
           <Tab tabNumber={3} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
         </div>
         <DividerSession />
-        <TrackBox track={tracks[trackNumber - 1]} className="mb-[72px]" />
-        <SpecialSessionBox />
+        <TrackBox track={tracks[trackNumber - 1]} />
       </div>
     </section>
   );
