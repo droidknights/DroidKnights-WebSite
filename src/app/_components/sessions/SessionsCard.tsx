@@ -44,7 +44,8 @@ export function SessionCard() {
           <Tab tabNumber={3} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
         </div>
         <DividerSession />
-        <TrackBox track={tracks[trackNumber - 1]} />
+        <TrackBox track={tracks[trackNumber - 1]} className="mb-[72px]" />
+        <SpecialSessionBox />
       </div>
     </section>
   );
