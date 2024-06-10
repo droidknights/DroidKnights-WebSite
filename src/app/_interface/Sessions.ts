@@ -240,7 +240,7 @@ export const track3: Track = {
     },
     {
       title: "무엇이든 물어보세요",
-      speaker: "Junior",
+      speaker: "Junior(김준비,윤영직,이현우)",
       type: Type.GENERAL,
       startTime: "11:50",
       endTime: "12:35",
@@ -276,7 +276,7 @@ export const track3: Track = {
     },
     {
       title: "무엇이든 물어보세요",
-      speaker: "Senior",
+      speaker: "Senior(정동진,문종락,양찬석,김민구)",
       type: Type.GENERAL,
       startTime: "15:45",
       endTime: "16:30",
