@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { qnaList } from "../_interface/Qna";
+import { qnaList } from "../_models/Qna";
 
 function Divider() {
   return <div className="h-px w-full max-w-[790px] bg-black" />;
@@ -35,7 +35,7 @@ export function QnaCard() {
         <h2 className="mb-2 text-sm font-medium text-blue-light md:mb-4 md:text-2xl">QnA</h2>
         <h3 className="mb-6 text-2xl font-bold md:mb-[72px] md:text-5xl xl:text-6xl">자주 묻는 질문</h3>
         <Divider />
-        {qnaList.map((qna, index) => (
+        {qnaList.map((qna) => (
           <div key={qna.question} className="w-full">
             <Qna question={qna.question} answer={qna.answer} />
             <Divider />

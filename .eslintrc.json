@@ -1,27 +1,8 @@
 {
-  "root": true,
-  "extends": ["airbnb", "next/core-web-vitals", "prettier"],
-  "plugins": ["prettier"],
-  "rules": {
-    "prettier/prettier": [
-      "warn",
-      {
-        "printWidth": 120,
-        "plugins": ["prettier-plugin-tailwindcss"]
-      }
-    ],
-    "react/jsx-filename-extension": [
-      "error",
-      { "extensions": [".jsx", ".tsx"] }
-    ],
-    "import/extensions": ["error", "never"],
-    "import/prefer-default-export": "off",
-    "jsx-a11y/click-events-have-key-events": "off",
-    "jsx-a11y/no-static-element-interactions": "off",
-    "react/require-default-props": "off",
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-    "no-unused-vars": "warn",
-    "no-undef": "off",
-    "no-shadow": "off"
-  }
+  "root": true, // 상위폴더의 설정 파일 영향 방지
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "prettier"
+  ]
 }

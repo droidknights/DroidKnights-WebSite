@@ -1,4 +1,5 @@
-import { COUNT_BEFORE_LUNCH, Session, Track } from "@/app/_interface/Sessions";
+import { COUNT_BEFORE_LUNCH, Track } from "@/src/_models/Sessions";
+
 import { SessionBox } from "./SessionBox";
 
 export function DividerSession() {

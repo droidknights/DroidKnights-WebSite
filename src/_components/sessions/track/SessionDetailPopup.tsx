@@ -1,7 +1,9 @@
 "use client";
 
-import { Session } from "@/app/_interface/Sessions";
 import React from "react";
+
+import { Session } from "@/src/_models/Sessions";
+
 import Portal from "../../Portal";
 
 function TextWithLineBreaks({ description }: { description: string }) {

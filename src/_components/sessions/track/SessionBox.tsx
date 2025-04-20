@@ -1,7 +1,9 @@
 "use client";
 
-import { Session } from "@/app/_interface/Sessions";
 import { useState } from "react";
+
+import { Session } from "@/src/_models/Sessions";
+
 import { SessionDetailPopup } from "./SessionDetailPopup";
 
 export function SessionBox({ session }: { session: Session }) {

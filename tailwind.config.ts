@@ -1,10 +1,11 @@
 import type { Config } from "tailwindcss";
+import zIndex from "./src/_styles/zIndex";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/_components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/_styles/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -14,9 +15,7 @@ const config: Config = {
         "grey-light": "#888888",
         grey: "#333333",
       },
-      screens: {
-        xl: "1366px",
-      },
+      zIndex,
     },
   },
   plugins: [],
