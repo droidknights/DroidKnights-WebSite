@@ -26,7 +26,10 @@ function SponsorGroup(level: Level, last: boolean) {
       <div className="mb-10 h-px w-full bg-black" />
       <div className="grid w-full grid-cols-2 gap-3">
         {logos.map((logo) => (
-          <div className="flex h-[91px] items-center justify-center rounded-[5px] bg-white px-4 md:h-[136px] md:px-10 xl:px-[120px]">
+          <div
+            key={logo}
+            className="flex h-[91px] items-center justify-center rounded-[5px] bg-white px-4 md:h-[136px] md:px-10 xl:px-[120px]"
+          >
             <img src={`/sponsors/${logo}`} alt="sponsor logo" />
           </div>
         ))}
