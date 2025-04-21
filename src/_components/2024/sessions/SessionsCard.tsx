@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+
+import { tracks } from "@/src/_models/2024/Sessions";
+
 import { SpecialSessionBox } from "./SpecialSessionBox";
 import { DividerSession, TrackBox } from "./track/TrackBox";
-import { tracks } from "@/src/_models/Sessions";
 
 function Tab({
   tabNumber,

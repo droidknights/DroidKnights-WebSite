@@ -1,4 +1,4 @@
-import { Level } from "../_models/Level";
+import { Level } from "../../_models/2024/Level";
 
 function SponsorGroup(level: Level, last: boolean) {
   let countStar = 0;

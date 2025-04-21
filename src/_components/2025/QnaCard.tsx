@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { qnaList } from "../_models/Qna";
+
+import { qnaList } from "../../_models/2025/Qna";
 
 function Divider() {
   return <div className="h-px w-full max-w-[790px] bg-black" />;

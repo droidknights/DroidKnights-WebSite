@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
-import { LastEvent } from "@/src/_components/LastEvent";
-import { Location } from "@/src/_components/Location";
-import { QnaCard } from "@/src/_components/QnaCard";
-import { Sponsor } from "@/src/_components/Sponsor";
-import { Terms } from "@/src/_components/Terms";
-import { Ticket } from "@/src/_components/Ticket";
-import { SessionCard } from "@/src/_components/sessions/SessionsCard";
+import { LastEvent } from "@/src/_components/2024/LastEvent";
+import { Location } from "@/src/_components/2024/Location";
+import { QnaCard } from "@/src/_components/2024/QnaCard";
+import { Sponsor } from "@/src/_components/2024/Sponsor";
+import { Terms } from "@/src/_components/2024/Terms";
+import { Ticket } from "@/src/_components/2024/Ticket";
+import { SessionCard } from "@/src/_components/2024/sessions/SessionsCard";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.droidknights.dev"),

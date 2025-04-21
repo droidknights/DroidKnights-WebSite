@@ -1,4 +1,4 @@
-import { COUNT_BEFORE_LUNCH, Track } from "@/src/_models/Sessions";
+import { COUNT_BEFORE_LUNCH, Track } from "@/src/_models/2025/Sessions";
 
 import { SessionBox } from "./SessionBox";
 

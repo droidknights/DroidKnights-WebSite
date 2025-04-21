@@ -1,30 +1,30 @@
 import Link from "next/link";
 
-import { LastEvent } from "@/src/_components/LastEvent";
-import { Location } from "@/src/_components/Location";
-import { QnaCard } from "@/src/_components/QnaCard";
-import { Sponsor } from "@/src/_components/Sponsor";
-import { Terms } from "@/src/_components/Terms";
-import { Ticket } from "@/src/_components/Ticket";
-import { SessionCard } from "@/src/_components/sessions/SessionsCard";
+import { LastEvent } from "@/src/_components/2025/LastEvent";
+import { Location } from "@/src/_components/2025/Location";
+import { QnaCard } from "@/src/_components/2025/QnaCard";
+import { Sponsor } from "@/src/_components/2025/Sponsor";
+import { Terms } from "@/src/_components/2025/Terms";
+import { Ticket } from "@/src/_components/2025/Ticket";
+import { SessionCard } from "@/src/_components/2025/sessions/SessionsCard";
 
 function Header() {
   return (
     <section className="relative">
       <img
         src="/banner_text.png"
-        alt="droidknights 2024 banner text"
+        alt="droidknights 2025 banner text"
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 px-4"
       />
       <div className="fixed flex w-full justify-between p-3 backdrop-blur md:px-10 md:py-5 xl:px-20">
-        <img src="/logo.svg" alt="droidknights 2024 logo" />
+        <img src="/logo.svg" alt="droidknights 2025 logo" />
         <Link href="https://festa.io/events/4990" target="_blank">
           <div className="cursor-point rounded bg-white px-4 py-2 text-xs font-semibold md:px-3 md:py-[10px] md:text-sm">
-            페스타 바로가기→
+            티켓사러 가기→
           </div>
         </Link>
       </div>
-      <img src="/banner_bg.png" alt="droidknights 2024 banner" className="h-[640px] w-screen object-cover" />
+      <img src="/banner_bg.png" alt="droidknights 2025 banner" className="h-[640px] w-screen object-cover" />
     </section>
   );
 }
@@ -40,7 +40,7 @@ function Description() {
             <br />
             안드로이드 개발자들만을 위한
             <br />
-            드로이드나이츠 2024
+            드로이드나이츠 2025
           </h1>
           <h2 className="text-xl font-medium leading-normal md:text-4xl md:leading-normal">
             주니어부터 시니어까지 모두가 공감하고
@@ -57,7 +57,7 @@ function Footer() {
   return (
     <section className="items-center justify-between bg-black px-10 py-9 md:flex md:py-10 xl:px-20">
       <div className="mb-3 items-center text-center md:mb-0 md:flex">
-        <p className="text-xs text-white md:text-sm">Copyright DroidKnights 2024</p>
+        <p className="text-xs text-white md:text-sm">Copyright DroidKnights 2025</p>
         <span className="mx-3 hidden text-xs text-white md:block md:text-sm">|</span>
         <p className="text-xs text-white md:text-sm">All Rights Reserved</p>
       </div>
