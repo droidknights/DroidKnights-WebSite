@@ -94,8 +94,8 @@ export const track1: Track = {
       title: "당신의 앱 빌드는 안녕하십니까?",
       speaker: "차영호",
       type: Type.ANDROID,
-      startTime: "15:45",
-      endTime: "16:30",
+      startTime: "15:35",
+      endTime: "16:20",
       detail: {
         company: "LINE Plus",
         speakerDescription:
@@ -108,8 +108,8 @@ export const track1: Track = {
       title: "Compose Material3 커스텀 디자인 시스템 구축기",
       speaker: "권대원",
       type: Type.ANDROID,
-      startTime: "16:50",
-      endTime: "17:20",
+      startTime: "16:40",
+      endTime: "17:10",
       detail: {
         company: "컬리",
         speakerDescription:
@@ -188,8 +188,8 @@ export const track2: Track = {
       title: "플레이어 SDK 개발자의 Kotlin Multiplatform 도입기",
       speaker: "모진섭",
       type: Type.ANDROID,
-      startTime: "15:45",
-      endTime: "16:30",
+      startTime: "15:35",
+      endTime: "16:20",
       detail: {
         company: "네이버",
         speakerDescription:
@@ -202,8 +202,8 @@ export const track2: Track = {
       title: "Compose로 Animation 만들기 feat.holgraphic Card",
       speaker: "최우성",
       type: Type.ANDROID,
-      startTime: "16:50",
-      endTime: "17:20",
+      startTime: "16:40",
+      endTime: "17:10",
       detail: {
         company: "ONE Store",
         speakerDescription:
