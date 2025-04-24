@@ -14,7 +14,7 @@ export function SessionSection() {
       <div className="px-6 py-20 md:px-10 md:py-40">
         <div className="mb-[72px] text-center">
           <h2 className="mb-2 text-sm font-medium text-[#5180FF] md:mb-4 md:text-2xl">SESSION</h2>
-          <h3 className="mb-2 text-2xl font-bold text-white md:mb-4 md:text-5xl">3가지 세션 트랙을 만나보세요</h3>
+          <h3 className="mb-2 text-2xl font-bold text-white md:mb-4 md:text-5xl">원하는 세션을 만나보세요</h3>
           <p className="text-sm font-medium text-[#888888] md:text-2xl">
             * 세션 일정 및 내용은 상황에 따라 조정될 수 있습니다
           </p>
