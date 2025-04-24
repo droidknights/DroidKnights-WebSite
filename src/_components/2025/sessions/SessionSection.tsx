@@ -19,10 +19,9 @@ export function SessionSection() {
             * 세션 일정 및 내용은 상황에 따라 조정될 수 있습니다
           </p>
         </div>
-        <div className="grid w-full grid-cols-3 gap-x-1 md:gap-x-3">
+        <div className="grid w-full grid-cols-2 gap-x-1 md:gap-x-2">
           <Tab tabNumber={1} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
           <Tab tabNumber={2} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
-          <Tab tabNumber={3} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
         </div>
         <DividerSession />
         <TrackBox track={tracks[trackNumber - 1]} className="mb-[72px]" />
