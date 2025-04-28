@@ -2,40 +2,19 @@
 
 import { useState } from "react";
 
-import { tracks } from "@/src/_models/2024/Sessions";
+import { tracks } from "@/src/_models/2025/Sessions";
 
 import { SpecialSessionBox } from "./SpecialSessionBox";
 import { DividerSession, TrackBox } from "./track/TrackBox";
 
-function Tab({
-  tabNumber,
-  currentTrackNumber,
-  setCurrentTrackNumber,
-}: {
-  tabNumber: number;
-  currentTrackNumber: number;
-  setCurrentTrackNumber: (trackNumber: number) => void;
-}) {
-  return (
-    <div
-      className={`cursor-pointer rounded-t-[20px] py-3 font-bold md:py-5 md:text-xl ${tabNumber === currentTrackNumber ? "bg-white text-black" : "bg-[#4CBCFF]/20 text-white"}`}
-      onClick={() => setCurrentTrackNumber(tabNumber)}
-    >
-      Track {tabNumber}
-    </div>
-  );
-}
-
-export function SessionCard() {
+export function SessionSection() {
   const [trackNumber, setTrackNumber] = useState(1);
   return (
-    <section className="flex justify-center bg-black">
-      <div className="flex w-full flex-col items-center px-6 py-20 text-center md:px-20 md:py-40 xl:px-40">
+    <section className="bg-[#0F0F0F]">
+      <div className="px-6 py-20 md:px-10 md:py-40">
         <div className="mb-[72px] text-center">
-          <h2 className="mb-2 text-sm font-medium text-[#46A7E0] md:mb-4 md:text-2xl">SESSION</h2>
-          <h3 className="mb-2 text-2xl font-bold text-white md:mb-4 md:text-5xl xl:text-6xl">
-            3가지 세션 트랙을 만나보세요
-          </h3>
+          <h2 className="mb-2 text-sm font-medium text-[#5180FF] md:mb-4 md:text-2xl">SESSION</h2>
+          <h3 className="mb-2 text-2xl font-bold text-white md:mb-4 md:text-5xl">3가지 세션 트랙을 만나보세요</h3>
           <p className="text-sm font-medium text-[#888888] md:text-2xl">
             * 세션 일정 및 내용은 상황에 따라 조정될 수 있습니다
           </p>
@@ -50,5 +29,26 @@ export function SessionCard() {
         <SpecialSessionBox />
       </div>
     </section>
+  );
+}
+
+function Tab({
+  tabNumber,
+  currentTrackNumber,
+  setCurrentTrackNumber,
+}: {
+  tabNumber: number;
+  currentTrackNumber: number;
+  setCurrentTrackNumber: (trackNumber: number) => void;
+}) {
+  return (
+    <div
+      className={`cursor-pointer rounded-t-[20px] py-3 text-center font-bold md:py-5 md:text-xl ${
+        tabNumber === currentTrackNumber ? "bg-white text-black" : "bg-white/20 text-white"
+      }`}
+      onClick={() => setCurrentTrackNumber(tabNumber)}
+    >
+      {`Track ${tabNumber}`}
+    </div>
   );
 }

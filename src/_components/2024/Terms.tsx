@@ -2,7 +2,7 @@
 
 export function Terms() {
   return (
-    <section className="flex justify-center bg-[url('/banner_black.png')] bg-cover bg-center bg-no-repeat">
+    <section className="flex justify-center bg-[url('/2024/banner_black.png')] bg-cover bg-center bg-no-repeat">
       <div className="md:py-30 w-full max-w-[1366px] px-6 py-10 md:px-10 xl:px-40">
         <div className="mb-10 flex flex-col items-center rounded-[10px] bg-gradient-to-b from-[#A0DCFF] to-[#33B3FF] px-6 py-10">
           <h3 className="mb-4 text-center font-semibold leading-normal md:mb-8 md:text-[32px] xl:text-4xl xl:leading-normal">
@@ -18,12 +18,12 @@ export function Terms() {
               alert("클립보드에 링크가 복사되었어요.");
             }}
           >
-            <img src="/share.svg" alt="share" className="mr-1 md:mr-2" />
+            <img src="/2024/share.svg" alt="share" className="mr-1 md:mr-2" />
             <span>주변에 알리기</span>
           </button>
         </div>
         <div className="flex w-full flex-col items-center rounded-[10px] bg-gradient-to-b from-[#EBFFDC] to-[#B5EE87] px-6 py-10">
-          <h3 className="mb-4 text-center text-center font-semibold leading-normal md:mb-8 md:text-4xl md:leading-normal">
+          <h3 className="mb-4 text-center font-semibold leading-normal md:mb-8 md:text-4xl md:leading-normal">
             모든 참여자가 행사에
             <br />
             차별없이 참여할 수 있도록 노력할 것을 약속 해주세요.

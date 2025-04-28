@@ -1,53 +1,59 @@
+import Image from "next/image";
+
 import { Level } from "../../_models/2025/Level";
 
-function SponsorGroup(level: Level, last: boolean) {
-  let countStar = 0;
+export function Sponsor() {
+  return (
+    <section className="bg-[url('/2025/bg_sponsor.png')] bg-cover bg-center bg-no-repeat">
+      <div className="px-6 py-20 md:px-10 md:py-40">
+        <div className="mb-6 text-center md:mb-[72px]">
+          <h2 className="mb-2 text-sm font-medium text-[#FAFAFA] md:mb-4 md:text-2xl">SPONSOR</h2>
+          <h3 className="text-2xl font-bold text-[#FAFAFA] md:text-5xl xl:text-6xl">함께하는 기업</h3>
+        </div>
+        <div className="mx-auto max-w-[1040px] space-y-[72px]">
+          {SponsorGroup(Level.PLATINUM)}
+          {SponsorGroup(Level.GOLD)}
+          {SponsorGroup(Level.SILVER)}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SponsorGroup(level: Level) {
   const logos: string[] = [];
   if (level === Level.PLATINUM) {
-    countStar = 3;
     logos.push();
   } else if (level === Level.GOLD) {
-    countStar = 2;
     logos.push();
   } else if (level === Level.SILVER) {
-    countStar = 1;
     logos.push();
-  }
-
-  const stars = [];
-  for (let idx = 0; idx < countStar; idx++) {
-    stars.push(<img src="/star.svg" alt="sponsor star" key={idx} className="h-4 w-4 md:h-8 md:w-8" />);
   }
 
   return (
-    <div className={`flex w-full flex-col items-center ${!last ? "mb-[72px]" : ""}`}>
-      <div className="mb-2 flex">{stars}</div>
-      <p className="mb-3 text-xl font-bold md:text-4xl">{level}</p>
-      <div className="mb-10 h-px w-full bg-black" />
-      <div className="grid w-full grid-cols-2 gap-3">
+    <div>
+      <div className="mb-1 flex justify-center">
+        <Image
+          src={`/2025/sponsors/star_${level.toLowerCase()}.svg`}
+          alt="sponsor logo"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-6 md:w-10"
+        />
+      </div>
+      <p className="mb-3 text-center text-xl font-bold text-[#FAFAFA] md:text-4xl">{level}</p>
+      <div className="mb-10 h-px w-full bg-[#FAFAFA]" />
+      <div className="grid w-full grid-cols-2 gap-6">
         {logos.map((logo) => (
           <div
             key={logo}
-            className="flex h-[91px] items-center justify-center rounded-[5px] bg-white px-4 md:h-[136px] md:px-10 xl:px-[120px]"
+            className="flex h-[91px] items-center justify-center rounded-[5px] bg-[#FAFAFA] px-4 md:h-[136px] md:px-10"
           >
-            <img src={`/sponsors/${logo}`} alt="sponsor logo" />
+            <img src={`/2025/sponsors/${logo}`} alt="sponsor logo" />
           </div>
         ))}
       </div>
     </div>
-  );
-}
-
-export function Sponsor() {
-  return (
-    <section className="flex justify-center bg-blue/30">
-      <div className="flex max-w-[1366px] flex-col items-center px-6 py-20 md:px-10 md:py-40 xl:px-40">
-        <h2 className="mb-2 text-sm font-medium text-blue-light md:mb-4 md:text-2xl">SPONSOR</h2>
-        <h3 className="mb-9 text-2xl font-bold md:mb-[72px] md:text-5xl xl:text-6xl">함께하는 기업</h3>
-        {SponsorGroup(Level.PLATINUM, false)}
-        {SponsorGroup(Level.GOLD, false)}
-        {SponsorGroup(Level.SILVER, true)}
-      </div>
-    </section>
   );
 }

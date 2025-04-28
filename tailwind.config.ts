@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+
 import zIndex from "./src/_styles/zIndex";
 
 const config: Config = {
@@ -9,12 +10,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        "blue-light": "#46A7E0",
-        blue: "#4CBCFF",
-        "grey-light": "#888888",
-        grey: "#333333",
-      },
       zIndex,
     },
   },

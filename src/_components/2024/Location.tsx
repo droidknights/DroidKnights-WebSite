@@ -1,6 +1,6 @@
 export function Location() {
   return (
-    <section className="flex justify-center bg-blue">
+    <section className="flex justify-center bg-[#4CBCFF]">
       <div className="flex max-w-[1366px] flex-col items-center px-6 py-20 text-center md:px-10 md:py-40 xl:px-40">
         <h2 className="mb-2 text-sm font-medium text-white md:mb-4 md:text-2xl xl:mb-4">Location</h2>
         <h3 className="mb-4 text-2xl font-bold md:text-[52px] md:leading-none xl:text-6xl">
@@ -9,14 +9,18 @@ export function Location() {
         <div className="mb-9 items-center md:mb-[72px] md:flex">
           <div className="mb-2 flex items-center justify-center md:mb-0 md:mr-8">
             <img
-              src="/location/date.svg"
+              src="/2024/location/date.svg"
               alt="date"
               className="mr-1 h-[20px] w-[20px] md:mr-3 md:h-[32px] md:w-[32px]"
             />
             <span className="text-sm font-semibold md:text-xl">2024년 6월 11일</span>
           </div>
           <div className="flex items-center justify-center">
-            <img src="/location/map_pin.svg" alt="map pin" className="mr-1 h-[20px] w-[20px] md:h-[32px] md:w-[32px]" />
+            <img
+              src="/2024/location/map_pin.svg"
+              alt="map pin"
+              className="mr-1 h-[20px] w-[20px] md:h-[32px] md:w-[32px]"
+            />
             <span className="text-sm font-semibold md:text-xl">삼성 코엑스 - 컨퍼런스룸E(3층)</span>
           </div>
         </div>

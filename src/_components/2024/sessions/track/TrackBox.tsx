@@ -8,9 +8,9 @@ export function DividerSession() {
 
 function BreakTimeBox({ time, title }: { time: string; title: string }) {
   return (
-    <div className="my-[5px] flex items-center justify-center bg-blue px-4 py-2.5 md:py-[18px]">
+    <div className="my-[5px] flex items-center justify-center bg-[#4CBCFF] px-4 py-2.5 md:py-[18px]">
       <p className="mr-2 text-sm font-bold md:text-xl">{time}</p>
-      <img src="/star.svg" alt="apply star" className="mr-2 h-[14px] w-[14px] md:h-[18px] md:w-[18px]" />
+      <img src="/2024/star.svg" alt="apply star" className="mr-2 h-[14px] w-[14px] md:h-[18px] md:w-[18px]" />
       <p className="text-sm font-bold md:text-xl">{title}</p>
     </div>
   );

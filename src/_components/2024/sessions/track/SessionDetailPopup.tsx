@@ -39,12 +39,12 @@ export function SessionDetailPopup({ session, close }: { session: Session; close
           <div className="flex justify-between">
             <p className="text-[27px] font-bold">{session.title}</p>
             <div className="ml-10 mt-1 shrink-0 cursor-pointer" onClick={close}>
-              <img src="/close.png" alt="close" />
+              <img src="/2024/close.png" alt="close" />
             </div>
           </div>
           <div className="my-6 h-px w-full bg-[#c4c4c4]" />
           <div className="text-xl leading-normal">
-            <p className="font-bold text-blue">
+            <p className="font-bold text-[#4CBCFF]">
               {session.speaker}
               {company && ` | ${company}`}
             </p>

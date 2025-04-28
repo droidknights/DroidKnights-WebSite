@@ -1,48 +1,75 @@
+import Image from "next/image";
 import Link from "next/link";
 
+import { FaqSection } from "@/src/_components/2025/FaqSection";
 import { LastEvent } from "@/src/_components/2025/LastEvent";
 import { Location } from "@/src/_components/2025/Location";
-import { QnaCard } from "@/src/_components/2025/QnaCard";
 import { Sponsor } from "@/src/_components/2025/Sponsor";
 import { Terms } from "@/src/_components/2025/Terms";
 import { Ticket } from "@/src/_components/2025/Ticket";
-import { SessionCard } from "@/src/_components/2025/sessions/SessionsCard";
+import { SessionSection } from "@/src/_components/2025/sessions/SessionSection";
+
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <div>
+        <Image
+          src="/2025/banner.png"
+          alt="droidknights 2025 banner"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full"
+        />
+      </div>
+      <main>
+        <div>
+          <Description />
+          {/* <SessionSection /> */}
+          <Ticket />
+          <Location />
+          {/* <Sponsor /> */}
+          <FaqSection />
+          <LastEvent />
+          <Terms />
+        </div>
+      </main>
+      <Footer />
+      <div id="popup-root" />
+    </>
+  );
+}
 
 function Header() {
   return (
-    <section className="relative">
-      <img
-        src="/banner_text.png"
-        alt="droidknights 2025 banner text"
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 px-4"
-      />
-      <div className="fixed flex w-full justify-between p-3 backdrop-blur md:px-10 md:py-5 xl:px-20">
-        <img src="/logo.svg" alt="droidknights 2025 logo" />
-        <Link href="https://festa.io/events/4990" target="_blank">
-          <div className="cursor-point rounded bg-white px-4 py-2 text-xs font-semibold md:px-3 md:py-[10px] md:text-sm">
+    <header className="fixed h-[77px] w-full bg-[#0F0F0F]">
+      <div className="mx-auto flex h-full max-w-[1366px] items-center justify-between px-10 md:px-20">
+        <Image src="/2025/logo.png" alt="droidknights 2025 logo" width={94} height={36} />
+        <Link href="" target="_blank">
+          <div className="cursor-point rounded bg-white px-4 py-2 text-xs font-semibold md:px-3 md:py-2.5 md:text-sm">
             티켓사러 가기→
           </div>
         </Link>
       </div>
-      <img src="/banner_bg.png" alt="droidknights 2025 banner" className="h-[640px] w-screen object-cover" />
-    </section>
+    </header>
   );
 }
 
 function Description() {
   return (
-    <section className="flex justify-center">
-      <div className="flex max-w-[1366px] flex-col items-center px-6 md:px-20">
-        <img className="absolute mt-10 hidden md:block" src="/arrow_down.svg" />
+    <section className="bg-[#FAFAFA]">
+      <div className="relative mx-auto flex max-w-[1366px] flex-col items-center px-6 md:px-20">
+        <img className="absolute mt-10 hidden md:block" src="/2024/arrow_down.svg" />
         <div className="py-20 text-center md:py-40">
-          <h1 className="mb-4 text-2xl font-bold leading-normal md:text-5xl md:leading-normal">
+          <h1 className="mb-4 text-2xl font-bold leading-[1.4] md:mb-6 md:text-5xl md:leading-[1.4]">
             대한민국 최대
             <br />
             안드로이드 개발자들만을 위한
             <br />
             드로이드나이츠 2025
           </h1>
-          <h2 className="text-xl font-medium leading-normal md:text-4xl md:leading-normal">
+          <h2 className="text-xl font-medium leading-[1.3] md:text-4xl md:leading-[1.3]">
             주니어부터 시니어까지 모두가 공감하고
             <br />
             즐길 수 있는 지식의 장으로 만들고자 합니다.
@@ -55,43 +82,25 @@ function Description() {
 
 function Footer() {
   return (
-    <section className="items-center justify-between bg-black px-10 py-9 md:flex md:py-10 xl:px-20">
-      <div className="mb-3 items-center text-center md:mb-0 md:flex">
-        <p className="text-xs text-white md:text-sm">Copyright DroidKnights 2025</p>
-        <span className="mx-3 hidden text-xs text-white md:block md:text-sm">|</span>
-        <p className="text-xs text-white md:text-sm">All Rights Reserved</p>
+    <footer className="w-full bg-[#0F0F0F]">
+      <div className="mx-auto flex max-w-[1366px] items-center justify-between px-10 py-10 md:px-20">
+        <div className="flex items-center">
+          <p className="text-sm text-white">Copyright DroidKnights 2025</p>
+          <span className="mx-3 text-sm text-white">|</span>
+          <p className="text-sm text-white">All Rights Reserved</p>
+        </div>
+        <div className="flex items-center gap-x-3">
+          <Link href="https://www.instagram.com/droid_knights/" target="_blank">
+            <img src="/2024/social/instagram.svg" alt="instagram" />
+          </Link>
+          <Link href="https://www.facebook.com/droidknights" target="_blank">
+            <img src="/2024/social/facebook.svg" alt="facebook" />
+          </Link>
+          <Link href="https://www.youtube.com/@DroidKnights" target="_blank">
+            <img src="/2024/social/youtube.svg" alt="youtube" />
+          </Link>
+        </div>
       </div>
-      <div className="flex items-center justify-center">
-        <a href="https://www.instagram.com/droid_knights/" target="_blank" className="mr-3">
-          <img src="/social/instagram.svg" alt="instagram" />
-        </a>
-        <a href="https://www.facebook.com/droidknights" target="_blank" className="mr-3">
-          <img src="/social/facebook.svg" alt="facebook" />
-        </a>
-        <a href="https://www.youtube.com/@DroidKnights" target="_blank" className="mr-3">
-          <img src="/social/youtube.svg" alt="youtube" />
-        </a>
-      </div>
-    </section>
-  );
-}
-
-export default function Home() {
-  return (
-    <main>
-      <div>
-        <Header />
-        <Description />
-        <SessionCard />
-        <Ticket />
-        <Location />
-        <Sponsor />
-        <QnaCard />
-        <LastEvent />
-        <Terms />
-        <Footer />
-      </div>
-      <div id="popup-root" />
-    </main>
+    </footer>
   );
 }

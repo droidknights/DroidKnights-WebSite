@@ -1,20 +1,6 @@
 import { COUNT_BEFORE_LUNCH, Track } from "@/src/_models/2025/Sessions";
 
-import { SessionBox } from "./SessionBox";
-
-export function DividerSession() {
-  return <div className="h-px w-full bg-white/60" />;
-}
-
-function BreakTimeBox({ time, title }: { time: string; title: string }) {
-  return (
-    <div className="my-[5px] flex items-center justify-center bg-blue px-4 py-2.5 md:py-[18px]">
-      <p className="mr-2 text-sm font-bold md:text-xl">{time}</p>
-      <img src="/star.svg" alt="apply star" className="mr-2 h-[14px] w-[14px] md:h-[18px] md:w-[18px]" />
-      <p className="text-sm font-bold md:text-xl">{title}</p>
-    </div>
-  );
-}
+import { SessionItem } from "./SessionItem";
 
 export function TrackBox({ track, className }: { track: Track; className?: string }) {
   return (
@@ -23,7 +9,7 @@ export function TrackBox({ track, className }: { track: Track; className?: strin
       <DividerSession />
       {track.sessions.map((session, index) => (
         <div key={`${session.title}${session.speaker}`}>
-          <SessionBox session={session} />
+          <SessionItem session={session} />
           <DividerSession />
           {index === COUNT_BEFORE_LUNCH - 1 && (
             <div>
@@ -33,6 +19,19 @@ export function TrackBox({ track, className }: { track: Track; className?: strin
           )}
         </div>
       ))}
+    </div>
+  );
+}
+
+export function DividerSession() {
+  return <div className="h-px w-full bg-white/60" />;
+}
+
+function BreakTimeBox({ time, title }: { time: string; title: string }) {
+  return (
+    <div className="my-[5px] flex items-center justify-center bg-[#215BF6] px-4 py-2.5 md:py-[18px]">
+      <p className="mr-2 text-sm font-bold text-white md:text-xl">{time}</p>
+      <p className="text-sm font-bold text-white md:text-xl">{title}</p>
     </div>
   );
 }

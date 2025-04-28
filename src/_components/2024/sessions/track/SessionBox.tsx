@@ -17,9 +17,9 @@ export function SessionBox({ session }: { session: Session }) {
           if (clickable) setShowSessionDetail(true);
         }}
       >
-        <p className="mb-2 text-sm font-medium text-grey-light">{`${session.startTime}-${session.endTime}`}</p>
+        <p className="mb-2 text-sm font-medium text-[#888888]">{`${session.startTime}-${session.endTime}`}</p>
         <p className="mb-2 font-bold text-white md:text-xl">{session.title}</p>
-        <p className="text-sm font-bold text-blue md:text-base">
+        <p className="text-sm font-bold text-[#4CBCFF] md:text-base">
           {session.speaker}
           {session.type && ` | ${session.type}`}
         </p>

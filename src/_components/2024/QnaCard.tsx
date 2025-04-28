@@ -15,13 +15,13 @@ function Qna({ question, answer }: { question: string; answer: string }) {
       <div className="mr-4">
         <div className="font-semibold md:text-2xl">{question}</div>
         <div
-          className={`text-sm font-medium text-grey-light md:text-xl ${open ? "visible mt-2" : "invisible mt-0 h-0"}`}
+          className={`text-sm font-medium text-[#888888] md:text-xl ${open ? "visible mt-2" : "invisible mt-0 h-0"}`}
         >
           {answer}
         </div>
       </div>
       <img
-        src={`${open ? "/qna/minus.svg" : "/qna/plus.svg"}`}
+        src={`${open ? "/2024/qna/minus.svg" : "/2024/qna/plus.svg"}`}
         alt="qna arrow"
         className="h-6 w-6 shrink-0 md:h-8 md:w-8"
       />
@@ -33,7 +33,7 @@ export function QnaCard() {
   return (
     <section className="flex justify-center">
       <div className="flex max-w-[1366px] flex-col items-center px-6 py-20 md:px-10 md:py-40">
-        <h2 className="mb-2 text-sm font-medium text-blue-light md:mb-4 md:text-2xl">QnA</h2>
+        <h2 className="mb-2 text-sm font-medium text-[#46A7E0] md:mb-4 md:text-2xl">QnA</h2>
         <h3 className="mb-6 text-2xl font-bold md:mb-[72px] md:text-5xl xl:text-6xl">자주 묻는 질문</h3>
         <Divider />
         {qnaList.map((qna) => (

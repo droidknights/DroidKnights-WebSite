@@ -1,9 +1,9 @@
-export interface Qna {
+export interface Faq {
   question: string;
   answer: string;
 }
 
-export const qnaList: Qna[] = [
+export const faqList: Faq[] = [
   {
     question: "Q. 행사 당일날 현장에서도 티켓 구매가 가능한가요?",
     answer: "아니요, 현장에서는 따로 참가 신청을 받지 않습니다.",

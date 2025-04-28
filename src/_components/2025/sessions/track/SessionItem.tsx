@@ -6,7 +6,7 @@ import { Session } from "@/src/_models/2025/Sessions";
 
 import { SessionDetailPopup } from "./SessionDetailPopup";
 
-export function SessionBox({ session }: { session: Session }) {
+export function SessionItem({ session }: { session: Session }) {
   const [showSessionDetail, setShowSessionDetail] = useState(false);
   const clickable = Boolean(session.detail);
   return (
@@ -17,9 +17,9 @@ export function SessionBox({ session }: { session: Session }) {
           if (clickable) setShowSessionDetail(true);
         }}
       >
-        <p className="mb-2 text-sm font-medium text-grey-light">{`${session.startTime}-${session.endTime}`}</p>
+        <p className="mb-2 text-sm font-medium text-[#888888]">{`${session.startTime}-${session.endTime}`}</p>
         <p className="mb-2 font-bold text-white md:text-xl">{session.title}</p>
-        <p className="text-sm font-bold text-blue md:text-base">
+        <p className="text-sm font-bold text-[#5180FF] md:text-base">
           {session.speaker}
           {session.type && ` | ${session.type}`}
         </p>
