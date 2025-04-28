@@ -4,10 +4,8 @@ import Link from "next/link";
 import { FaqSection } from "@/src/_components/2025/FaqSection";
 import { LastEvent } from "@/src/_components/2025/LastEvent";
 import { Location } from "@/src/_components/2025/Location";
-import { Sponsor } from "@/src/_components/2025/Sponsor";
 import { Terms } from "@/src/_components/2025/Terms";
 import { Ticket } from "@/src/_components/2025/Ticket";
-import { SessionSection } from "@/src/_components/2025/sessions/SessionSection";
 
 export default function Home() {
   return (
