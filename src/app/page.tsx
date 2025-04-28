@@ -10,30 +10,32 @@ import { Ticket } from "@/src/_components/2025/Ticket";
 export default function Home() {
   return (
     <>
-      <Header />
       <div>
-        <Image
-          src="/2025/banner.png"
-          alt="droidknights 2025 banner"
-          width={0}
-          height={0}
-          sizes="100vw"
-          className="w-full"
-        />
-      </div>
-      <main>
-        <div>
-          <Description />
-          {/* <SessionSection /> */}
-          <Ticket />
-          <Location />
-          {/* <Sponsor /> */}
-          <FaqSection />
-          <LastEvent />
-          <Terms />
+        <Header />
+        <div className="mt-[77px]">
+          <Image
+            src="/2025/banner.png"
+            alt="droidknights 2025 banner"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full"
+          />
         </div>
-      </main>
-      <Footer />
+        <main>
+          <div>
+            <Description />
+            {/* <SessionSection /> */}
+            <Ticket />
+            <Location />
+            {/* <Sponsor /> */}
+            <FaqSection />
+            <LastEvent />
+            <Terms />
+          </div>
+        </main>
+        <Footer />
+      </div>
       <div id="popup-root" />
     </>
   );
@@ -41,7 +43,7 @@ export default function Home() {
 
 function Header() {
   return (
-    <header className="fixed h-[77px] w-full bg-[#0F0F0F]">
+    <header className="fixed top-0 h-[77px] w-full bg-[#0F0F0F]">
       <div className="mx-auto flex h-full max-w-[1366px] items-center justify-between px-10 md:px-20">
         <Image src="/2025/logo.png" alt="droidknights 2025 logo" width={94} height={36} />
         <Link href="" target="_blank">
