@@ -14,15 +14,14 @@ export function SessionSection() {
       <div className="px-6 py-20 md:px-10 md:py-40">
         <div className="mb-[72px] text-center">
           <h2 className="mb-2 text-sm font-medium text-[#5180FF] md:mb-4 md:text-2xl">SESSION</h2>
-          <h3 className="mb-2 text-2xl font-bold text-white md:mb-4 md:text-5xl">3가지 세션 트랙을 만나보세요</h3>
+          <h3 className="mb-2 text-2xl font-bold text-white md:mb-4 md:text-5xl">원하는 세션을 만나보세요</h3>
           <p className="text-sm font-medium text-[#888888] md:text-2xl">
             * 세션 일정 및 내용은 상황에 따라 조정될 수 있습니다
           </p>
         </div>
-        <div className="grid w-full grid-cols-3 gap-x-1 md:gap-x-3">
+        <div className="grid w-full grid-cols-2 gap-x-1 md:gap-x-2">
           <Tab tabNumber={1} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
           <Tab tabNumber={2} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
-          <Tab tabNumber={3} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
         </div>
         <DividerSession />
         <TrackBox track={tracks[trackNumber - 1]} className="mb-[72px]" />

@@ -94,8 +94,8 @@ export const track1: Track = {
       title: "당신의 앱 빌드는 안녕하십니까?",
       speaker: "차영호",
       type: Type.ANDROID,
-      startTime: "15:45",
-      endTime: "16:30",
+      startTime: "15:35",
+      endTime: "16:20",
       detail: {
         company: "LINE Plus",
         speakerDescription:
@@ -108,8 +108,8 @@ export const track1: Track = {
       title: "Compose Material3 커스텀 디자인 시스템 구축기",
       speaker: "권대원",
       type: Type.ANDROID,
-      startTime: "16:50",
-      endTime: "17:20",
+      startTime: "16:40",
+      endTime: "17:10",
       detail: {
         company: "컬리",
         speakerDescription:
@@ -117,6 +117,20 @@ export const track1: Track = {
         description:
           "1. 기존 Material3 은 어떻게 디자인 컴포넌트를 구성하고 있었는지\n2. Compose Material3를 커스텀 하여 디자인 시스템을 구축하는 과정에서 겪은 트러블 슈팅 경험\n3. Compose 마이그레이션 과정에서 어떤 경험들이 있었는지\n4. 위 내용보다 중요할지 모르는 디자인팀과 디자인 시스템 구축 과정에서의 커뮤니케이션 & 트러블슈팅",
       },
+    },
+    {
+        title: "Compose Material3 커스텀 디자인 시스템 구축기",
+        speaker: "권대원2",
+        type: Type.ANDROID,
+        startTime: "17:30",
+        endTime: "18:00",
+        detail: {
+            company: "컬리",
+            speakerDescription:
+                "현재 컬리에 재직 중이며, 기존 서비스에 Compose를 적용하고, KPDS(Kurly Product Design System)를 만들어 나가는 과정에서의 경험들을 공유합니다.",
+            description:
+                "1. 기존 Material3 은 어떻게 디자인 컴포넌트를 구성하고 있었는지\n2. Compose Material3를 커스텀 하여 디자인 시스템을 구축하는 과정에서 겪은 트러블 슈팅 경험\n3. Compose 마이그레이션 과정에서 어떤 경험들이 있었는지\n4. 위 내용보다 중요할지 모르는 디자인팀과 디자인 시스템 구축 과정에서의 커뮤니케이션 & 트러블슈팅",
+        },
     },
   ],
 };
@@ -188,8 +202,8 @@ export const track2: Track = {
       title: "플레이어 SDK 개발자의 Kotlin Multiplatform 도입기",
       speaker: "모진섭",
       type: Type.ANDROID,
-      startTime: "15:45",
-      endTime: "16:30",
+      startTime: "15:35",
+      endTime: "16:20",
       detail: {
         company: "네이버",
         speakerDescription:
@@ -202,8 +216,8 @@ export const track2: Track = {
       title: "Compose로 Animation 만들기 feat.holgraphic Card",
       speaker: "최우성",
       type: Type.ANDROID,
-      startTime: "16:50",
-      endTime: "17:20",
+      startTime: "16:40",
+      endTime: "17:10",
       detail: {
         company: "ONE Store",
         speakerDescription:
@@ -212,90 +226,22 @@ export const track2: Track = {
           "이번에 발표할 챕터는 Compose로 Animation 만들기입니다. LookAheadLayout과 sharedTransition에 대해 알아보고, Card를 이용하여 뒤집는 애니메이션, 핸드폰의 움직임에 따른 인터렉션, Pallarax 애니메이션을 다룰 예정입니다.",
       },
     },
+    {
+       title: "Compose로 Animation 만들기 feat.holgraphic Card",
+       speaker: "최우성2",
+       type: Type.ANDROID,
+       startTime: "17:30",
+       endTime: "18:00",
+       detail: {
+           company: "ONE Store",
+           speakerDescription:
+               "요새 운동에 푹빠진 ONE store에서 일하고있는 Android 개발자입니다. 사용자의 인터렉션에 대해 관심이 많고, 남들에게 공유하는것을 좋아합니다.",
+           description:
+               "이번에 발표할 챕터는 Compose로 Animation 만들기입니다. LookAheadLayout과 sharedTransition에 대해 알아보고, Card를 이용하여 뒤집는 애니메이션, 핸드폰의 움직임에 따른 인터렉션, Pallarax 애니메이션을 다룰 예정입니다.",
+       },
+   },
+
   ],
 };
 
-export const track3: Track = {
-  sessions: [
-    {
-      title: "키노트",
-      speaker: "Speaker",
-      type: undefined,
-      startTime: "10:40",
-      endTime: "11:00",
-    },
-    {
-      title: "코틀린 제로베이스 DSL",
-      speaker: "히카맹",
-      type: Type.GENERAL,
-      startTime: "11:00",
-      endTime: "11:30",
-      detail: {
-        company: "코드스피츠",
-        speakerDescription:
-          "코드스피츠를 운영하며 개발과 교육에 관심많은 일인입니다. 소소한 언어덕후로서 코틀린에 많은 흥미를 갖고 있습니다.",
-        description:
-          "코틀린은 인라이닝을 통해 높은 성능을 제공하면서도 풍부한 표현을 DSL로 제공할 수 있습니다. 도메인 친화적인 언어로 코드를 재구성하면서도 오버헤드를 없애는 방법을 살펴봅니다.",
-      },
-    },
-    {
-      title: "무엇이든 물어보세요",
-      speaker: "Junior(김준비,윤영직,이현우)",
-      type: Type.GENERAL,
-      startTime: "11:50",
-      endTime: "12:35",
-    },
-    // 점심시간
-    {
-      title: "고객사의 context에 최소 영향으로 채널톡 SDK에 다크모드 적용하기",
-      speaker: "윤혁",
-      type: Type.ANDROID,
-      startTime: "13:55",
-      endTime: "14:25",
-      detail: {
-        company: "채널톡",
-        speakerDescription:
-          "채널톡에서 고객과 기업을 이어주는 앱을 개발하고 있습니다. 고객사에서 고객과 손쉽게 채팅할 수 있는 채팅 SDK 뿐만 아니라, 상담사가 고객과 언제든 문의 답변을 할 수 있게끔 채팅 앱을 만들고 관리하고 있습니다. 말리빈이라는 닉네임으로 교육 분야에서 활동하고 있으며, 가끔은 일상 유튜브 영상을 편집해 올리곤 합니다.",
-        description:
-          "채널톡 SDK는 원하는 앱에 조금의 코드만 작성하면, 바로 채널톡 상담 기능을 고객에게 제공할 수 있어요. 채널톡 상담 기능을 사용할 수 있게 이전 상담 내용이나 현재 진행중인 상담 등을 볼 수 있는 라운지와, 채팅할 수 있는 화면을 모두 제공합니다.\n\n이 화면들에 일괄적인 다크모드를 설정할 수 있게 옵션을 제공하는데요, 고객사의 context에 영향을 최소로 받으면서, SDK화면에 최소의 변경점으로 원하는 테마를 입힌 방법에 대해 소개하려합니다.",
-      },
-    },
-    {
-      title: "compose-video 오픈소스 라이브러리 개발기 (배포까지)",
-      speaker: "이상훈",
-      type: Type.ANDROID,
-      startTime: "14:45",
-      endTime: "15:15",
-      detail: {
-        company: "at Studio",
-        speakerDescription:
-          "안녕하세요. 현재 at이라는 스타트업에서 프로덕트 엔지니어로 근무하고 있는 이상훈이라고 합니다. 7년차 안드로이드 개발자이며, 지금은 안드로이드와 iOS 등 모바일 쪽의 개발을 같이 하고 있습니다. 개발할 때 로우 레벨까지 내려가는 것을 좋아하며, 제일 좋아하는 분야는 최적화 분야입니다. 요즘은 Compose에서의 최적화와 KMP, CMP 찍먹을 해보고 있습니다.",
-        description:
-          "Compose에서 간혹 영상을 재생해야 할 일이 있는데, 우리는 흔히 이럴 때 google에서 만든 미디어 오픈소스 라이브러리인 ExoPlayer를 사용합니다. 이 ExoPlayer를 Compose에서 사용하려면 어떻게 해야할까요? ExoPlayer를 사용하여 Compose용 VideoPlayer를 만들어보고, 전체화면 핸들링 등을 다뤄봅니다. 또한, 이번 발표 때 다룬 코드 그대로인 'compose-video' 라이브러리를 배포하기까지의 과정 (baseline profile, maven central 배포 등)을 간단히 다룹니다.",
-      },
-    },
-    {
-      title: "무엇이든 물어보세요",
-      speaker: "Senior(정동진,문종락,양찬석,김민구)",
-      type: Type.GENERAL,
-      startTime: "15:45",
-      endTime: "16:30",
-    },
-    {
-      title: "TextField 씹고 뜯고 맛보고 즐기고",
-      speaker: "이현우",
-      type: Type.ANDROID,
-      startTime: "16:50",
-      endTime: "17:20",
-      detail: {
-        company: "GDSC 건국, Kotlin User Groups 서울",
-        speakerDescription:
-          "학생 개발자 이현우입니다! 매스프레소(콴다)에서 2년동안 안드로이드 개발자로 재직한 경험이 있습니다. 현재는 GDSC 건국대학교 챕터의 리드를 맡고 있고 Kotlin User Groups Seoul의 오거나이저로 활동하고 있습니다.",
-        description:
-          "정보를 입력받는 컴포넌트를 빼놓고 앱을 만든다는 것은 아마 상상하기 힘들 것이다. Compose에서는 TextField 계열의 함수들이 이런 역할들을 맡고있다.\n\nTextField를 활용해서 기능을 구현하려고 막상 와이어프레임이나 피그마를 보면 '이걸 TextField로 구현할 수 있는건가?'라는 생각을 들게 하는 입력창들을 볼 수 있는데, '오늘도 개발자는 안 된다고' 말하기 싫은 여러분들을 위해 TextField의 기본적인 이해부터 TextField 활용(커스텀) 여정기, 나아가서 BasicTextField2 API에 대한 간략한 내용을 제공하고자 한다.",
-      },
-    },
-  ],
-};
-
-export const tracks = [track1, track2, track3];
+export const tracks = [track1, track2];
