@@ -8,7 +8,7 @@ export function Ticket() {
           <h2 className="mb-4 text-sm font-medium text-[#5180FF] md:text-2xl">Ticket</h2>
           <h3 className="text-2xl font-bold text-white md:text-5xl xl:text-6xl">행사장 입장부터, 한정 굿즈까지</h3>
         </div>
-        <div className="mx-auto max-w-[720px] rounded-[5px] bg-black/50 px-4 py-9 text-center md:py-[46px]">
+        <div className="mx-auto max-w-[720px] rounded-[5px] bg-[#0F0F0F] px-4 py-9 text-center md:py-[46px]">
           <p className="mb-2.5 text-sm font-semibold text-[#5180FF] md:text-2xl">일반</p>
           <p className="mb-2.5 text-2xl font-bold text-white md:text-4xl">59,000원</p>
           <p className="text-sm font-medium text-[#888888] md:text-xl">단체 구매 가능</p>

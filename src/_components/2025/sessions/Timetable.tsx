@@ -4,10 +4,9 @@ import { useState } from "react";
 
 import { tracks } from "@/src/_models/2025/Sessions";
 
-import { SpecialSessionBox } from "./SpecialSessionBox";
 import { DividerSession, TrackBox } from "./track/TrackBox";
 
-export function SessionSection() {
+export const Timetable = () => {
   const [trackNumber, setTrackNumber] = useState(1);
   return (
     <section className="bg-[#0F0F0F]">
@@ -24,12 +23,11 @@ export function SessionSection() {
           <Tab tabNumber={2} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
         </div>
         <DividerSession />
-        <TrackBox track={tracks[trackNumber - 1]} className="mb-[72px]" />
-        <SpecialSessionBox />
+        <TrackBox track={tracks[trackNumber - 1]} />
       </div>
     </section>
   );
-}
+};
 
 function Tab({
   tabNumber,

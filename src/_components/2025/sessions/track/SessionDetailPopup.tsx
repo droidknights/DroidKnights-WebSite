@@ -6,7 +6,7 @@ import { Session } from "@/src/_models/2025/Sessions";
 
 import Portal from "../../Portal";
 
-export function SessionDetailPopup({ session, close }: { session: Session; close: () => void }) {
+export const SessionDetailPopup = ({ session, close }: { session: Session; close: () => void }) => {
   const company = session.detail?.company;
   return (
     <Portal selector="#popup-root">
@@ -40,7 +40,7 @@ export function SessionDetailPopup({ session, close }: { session: Session; close
       </div>
     </Portal>
   );
-}
+};
 
 function TextWithLineBreaks({ description }: { description: string }) {
   const textWithBreaks = description.split("\n").map((text, index) => {

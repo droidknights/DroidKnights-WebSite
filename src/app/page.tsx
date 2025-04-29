@@ -7,12 +7,14 @@ import { Location } from "@/src/_components/2025/Location";
 import { Terms } from "@/src/_components/2025/Terms";
 import { Ticket } from "@/src/_components/2025/Ticket";
 
+import { SponsorSection } from "../_components/2025/SponsorSection";
+
 export default function Home() {
   return (
     <>
       <div>
         <Header />
-        <div className="mt-[77px]">
+        <div className="bg-[#0F0F0F] pt-[77px]">
           <Image
             src="/2025/banner.png"
             alt="droidknights 2025 banner"
@@ -25,10 +27,9 @@ export default function Home() {
         <main>
           <div>
             <Description />
-            {/* <SessionSection /> */}
             <Ticket />
             <Location />
-            {/* <Sponsor /> */}
+            <SponsorSection />
             <FaqSection />
             <LastEvent />
             <Terms />
@@ -43,8 +44,8 @@ export default function Home() {
 
 function Header() {
   return (
-    <header className="fixed top-0 h-[77px] w-full bg-[#0F0F0F]">
-      <div className="mx-auto flex h-full max-w-[1366px] items-center justify-between px-10 md:px-20">
+    <header className="fixed top-0 h-[77px] w-full bg-[#0F0F0F]/20">
+      <div className="mx-auto flex h-full max-w-[1366px] items-center justify-between px-5 md:px-10">
         <Image src="/2025/logo.png" alt="droidknights 2025 logo" width={94} height={36} />
         <Link href="" target="_blank">
           <div className="cursor-point rounded bg-white px-4 py-2 text-xs font-semibold md:px-3 md:py-2.5 md:text-sm">
@@ -83,7 +84,7 @@ function Description() {
 function Footer() {
   return (
     <footer className="w-full bg-[#0F0F0F]">
-      <div className="mx-auto flex max-w-[1366px] items-center justify-between px-10 py-10 md:px-20">
+      <div className="mx-auto flex max-w-[1366px] items-center justify-between px-5 py-10 md:px-10">
         <div className="flex items-center">
           <p className="text-sm text-white">Copyright DroidKnights 2025</p>
           <span className="mx-3 text-sm text-white">|</span>

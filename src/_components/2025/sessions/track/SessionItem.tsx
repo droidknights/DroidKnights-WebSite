@@ -6,7 +6,7 @@ import { Session } from "@/src/_models/2025/Sessions";
 
 import { SessionDetailPopup } from "./SessionDetailPopup";
 
-export function SessionItem({ session }: { session: Session }) {
+export const SessionItem = ({ session }: { session: Session }) => {
   const [showSessionDetail, setShowSessionDetail] = useState(false);
   const clickable = Boolean(session.detail);
   return (
@@ -27,4 +27,4 @@ export function SessionItem({ session }: { session: Session }) {
       {showSessionDetail && <SessionDetailPopup session={session} close={() => setShowSessionDetail(false)} />}
     </div>
   );
-}
+};
