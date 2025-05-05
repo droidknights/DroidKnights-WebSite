@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { faqList } from "../../_models/2025/Faq";
 
-export function FaqSection() {
+export function Faqs() {
   return (
     <section className="bg-[#FAFAFA]">
       <div className="px-6 py-20 md:px-10 md:py-40">

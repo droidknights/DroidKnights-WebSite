@@ -1,4 +1,4 @@
-import { COUNT_BEFORE_LUNCH, Track } from "@/src/_models/2025/Sessions";
+import { COUNT_BEFORE_LUNCH, Track } from "@/src/_models/2025/sessions/Tracks";
 
 import { SessionItem } from "./SessionItem";
 

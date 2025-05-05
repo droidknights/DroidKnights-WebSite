@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { tracks } from "@/src/_models/2025/Sessions";
+import { tracks } from "@/src/_models/2025/sessions/Sessions";
 
 import { DividerSession, TrackBox } from "./track/TrackBox";
 

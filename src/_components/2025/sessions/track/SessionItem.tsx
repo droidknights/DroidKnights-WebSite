@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { Session } from "@/src/_models/2025/Sessions";
+import { Session } from "@/src/_models/2025/sessions/Sessions";
 
 import { SessionDetailPopup } from "./SessionDetailPopup";
 

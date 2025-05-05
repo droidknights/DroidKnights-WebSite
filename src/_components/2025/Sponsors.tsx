@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Level, Sponsor, goldSponsors } from "@/src/_models/2025/Sponsors";
 
-export const SponsorSection = () => {
+export const Sponsors = () => {
   return (
     <section className="bg-[url('/2025/bg_sponsor.png')] bg-cover bg-center bg-no-repeat">
       <div className="px-6 py-20 md:px-10 md:py-40">

@@ -1,28 +1,10 @@
-enum Type {
-  ANDROID = "Android",
-  GENERAL = "General",
-}
+import { Session, Type } from "./Sessions";
 
-export interface SessionDetail {
-  company?: string;
-  description: string;
-  speakerDescription: string;
-}
-
-export interface Session {
-  title: string;
-  speaker: string;
-  type?: Type;
-  startTime: string;
-  endTime: string;
-  detail?: SessionDetail;
-}
+export const COUNT_BEFORE_LUNCH = 3;
 
 export interface Track {
   sessions: Session[];
 }
-
-export const COUNT_BEFORE_LUNCH = 3;
 
 export const track1: Track = {
   sessions: [
@@ -119,18 +101,18 @@ export const track1: Track = {
       },
     },
     {
-        title: "Compose Material3 커스텀 디자인 시스템 구축기",
-        speaker: "권대원2",
-        type: Type.ANDROID,
-        startTime: "17:30",
-        endTime: "18:00",
-        detail: {
-            company: "컬리",
-            speakerDescription:
-                "현재 컬리에 재직 중이며, 기존 서비스에 Compose를 적용하고, KPDS(Kurly Product Design System)를 만들어 나가는 과정에서의 경험들을 공유합니다.",
-            description:
-                "1. 기존 Material3 은 어떻게 디자인 컴포넌트를 구성하고 있었는지\n2. Compose Material3를 커스텀 하여 디자인 시스템을 구축하는 과정에서 겪은 트러블 슈팅 경험\n3. Compose 마이그레이션 과정에서 어떤 경험들이 있었는지\n4. 위 내용보다 중요할지 모르는 디자인팀과 디자인 시스템 구축 과정에서의 커뮤니케이션 & 트러블슈팅",
-        },
+      title: "Compose Material3 커스텀 디자인 시스템 구축기",
+      speaker: "권대원2",
+      type: Type.ANDROID,
+      startTime: "17:30",
+      endTime: "18:00",
+      detail: {
+        company: "컬리",
+        speakerDescription:
+          "현재 컬리에 재직 중이며, 기존 서비스에 Compose를 적용하고, KPDS(Kurly Product Design System)를 만들어 나가는 과정에서의 경험들을 공유합니다.",
+        description:
+          "1. 기존 Material3 은 어떻게 디자인 컴포넌트를 구성하고 있었는지\n2. Compose Material3를 커스텀 하여 디자인 시스템을 구축하는 과정에서 겪은 트러블 슈팅 경험\n3. Compose 마이그레이션 과정에서 어떤 경험들이 있었는지\n4. 위 내용보다 중요할지 모르는 디자인팀과 디자인 시스템 구축 과정에서의 커뮤니케이션 & 트러블슈팅",
+      },
     },
   ],
 };
@@ -227,20 +209,19 @@ export const track2: Track = {
       },
     },
     {
-       title: "Compose로 Animation 만들기 feat.holgraphic Card",
-       speaker: "최우성2",
-       type: Type.ANDROID,
-       startTime: "17:30",
-       endTime: "18:00",
-       detail: {
-           company: "ONE Store",
-           speakerDescription:
-               "요새 운동에 푹빠진 ONE store에서 일하고있는 Android 개발자입니다. 사용자의 인터렉션에 대해 관심이 많고, 남들에게 공유하는것을 좋아합니다.",
-           description:
-               "이번에 발표할 챕터는 Compose로 Animation 만들기입니다. LookAheadLayout과 sharedTransition에 대해 알아보고, Card를 이용하여 뒤집는 애니메이션, 핸드폰의 움직임에 따른 인터렉션, Pallarax 애니메이션을 다룰 예정입니다.",
-       },
-   },
-
+      title: "Compose로 Animation 만들기 feat.holgraphic Card",
+      speaker: "최우성2",
+      type: Type.ANDROID,
+      startTime: "17:30",
+      endTime: "18:00",
+      detail: {
+        company: "ONE Store",
+        speakerDescription:
+          "요새 운동에 푹빠진 ONE store에서 일하고있는 Android 개발자입니다. 사용자의 인터렉션에 대해 관심이 많고, 남들에게 공유하는것을 좋아합니다.",
+        description:
+          "이번에 발표할 챕터는 Compose로 Animation 만들기입니다. LookAheadLayout과 sharedTransition에 대해 알아보고, Card를 이용하여 뒤집는 애니메이션, 핸드폰의 움직임에 따른 인터렉션, Pallarax 애니메이션을 다룰 예정입니다.",
+      },
+    },
   ],
 };
 

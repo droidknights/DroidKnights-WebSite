@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { FaqSection } from "@/src/_components/2025/FaqSection";
+import { Faqs } from "@/src/_components/2025/Faqs";
 import { LastEvent } from "@/src/_components/2025/LastEvent";
 import { Location } from "@/src/_components/2025/Location";
 import { Terms } from "@/src/_components/2025/Terms";
 import { Ticket } from "@/src/_components/2025/Ticket";
 
-import { SponsorSection } from "../_components/2025/SponsorSection";
+import { Sponsors } from "../_components/2025/Sponsors";
+import { SessionList } from "../_components/2025/sessions/SessionList";
+import { Timetable } from "../_components/2025/sessions/Timetable";
 
 export default function Home() {
   return (
@@ -27,10 +29,11 @@ export default function Home() {
         <main>
           <div>
             <Description />
+            <SessionList />
             <Ticket />
             <Location />
-            <SponsorSection />
-            <FaqSection />
+            <Sponsors />
+            <Faqs />
             <LastEvent />
             <Terms />
           </div>
