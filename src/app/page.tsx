@@ -9,7 +9,6 @@ import { Ticket } from "@/src/_components/2025/Ticket";
 
 import { Sponsors } from "../_components/2025/Sponsors";
 import { SessionList } from "../_components/2025/sessions/SessionList";
-import { Timetable } from "../_components/2025/sessions/Timetable";
 
 export default function Home() {
   return (
