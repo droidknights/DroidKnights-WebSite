@@ -5,11 +5,8 @@ import { Faqs } from "@/src/_components/2025/Faqs";
 import { LastEvent } from "@/src/_components/2025/LastEvent";
 import { Location } from "@/src/_components/2025/Location";
 import { Terms } from "@/src/_components/2025/Terms";
-import { Ticket } from "@/src/_components/2025/Ticket";
 
 import { Sponsors } from "../_components/2025/Sponsors";
-import { SessionList } from "../_components/2025/sessions/SessionList";
-import { Timetable } from "../_components/2025/sessions/Timetable";
 
 export default function Home() {
   return (
@@ -29,9 +26,8 @@ export default function Home() {
         <main>
           <div>
             <Description />
-            <SessionList />
-            <Timetable />
-            <Ticket />
+            {/* <SessionList /> */}
+            {/* <Ticket /> */}
             <Location />
             <Sponsors />
             <Faqs />
@@ -51,11 +47,11 @@ function Header() {
     <header className="fixed top-0 h-[77px] w-full bg-[#0F0F0F]/20 backdrop-blur-[20px]">
       <div className="mx-auto flex h-full max-w-[1366px] items-center justify-between px-5 md:px-10">
         <Image src="/2025/logo.png" alt="droidknights 2025 logo" width={94} height={36} />
-        <Link href="" target="_blank">
+        {/* <Link href="" target="_blank">
           <div className="cursor-point rounded bg-white px-4 py-2 text-xs font-semibold md:px-3 md:py-2.5 md:text-sm">
             티켓사러 가기→
           </div>
-        </Link>
+        </Link> */}
       </div>
     </header>
   );
