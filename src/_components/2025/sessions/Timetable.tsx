@@ -10,7 +10,7 @@ export const Timetable = () => {
   const [trackNumber, setTrackNumber] = useState(1);
   return (
     <section className="bg-[#0F0F0F]">
-      <div className="px-6 py-20 md:px-10 md:py-40">
+      <div className="px-6 py-20 md:px-20 md:py-40 lg:px-40">
         <div className="mb-[72px] text-center">
           <h2 className="mb-2 text-sm font-medium text-[#5180FF] md:mb-4 md:text-2xl">SESSION</h2>
           <h3 className="mb-2 text-2xl font-bold text-white md:mb-4 md:text-5xl">원하는 세션을 만나보세요</h3>

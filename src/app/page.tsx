@@ -9,6 +9,7 @@ import { Ticket } from "@/src/_components/2025/Ticket";
 
 import { Sponsors } from "../_components/2025/Sponsors";
 import { SessionList } from "../_components/2025/sessions/SessionList";
+import { Timetable } from "../_components/2025/sessions/Timetable";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
           <div>
             <Description />
             <SessionList />
+            <Timetable />
             <Ticket />
             <Location />
             <Sponsors />
@@ -46,7 +48,7 @@ export default function Home() {
 
 function Header() {
   return (
-    <header className="fixed top-0 h-[77px] w-full bg-[#0F0F0F]/20">
+    <header className="fixed top-0 h-[77px] w-full bg-[#0F0F0F]/20 backdrop-blur-[20px]">
       <div className="mx-auto flex h-full max-w-[1366px] items-center justify-between px-5 md:px-10">
         <Image src="/2025/logo.png" alt="droidknights 2025 logo" width={94} height={36} />
         <Link href="" target="_blank">
