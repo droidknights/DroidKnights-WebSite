@@ -10,12 +10,11 @@ export function Ticket() {
         </div>
         <div className="mx-auto max-w-[720px] rounded-[5px] bg-[#0F0F0F] px-4 py-9 text-center md:py-[46px]">
           <p className="mb-2.5 text-sm font-semibold text-[#5180FF] md:text-2xl">일반</p>
-          <p className="mb-2.5 text-2xl font-bold text-white md:text-4xl">59,000원</p>
-          <p className="text-sm font-medium text-[#888888] md:text-xl">단체 구매 가능</p>
+          <p className="text-2xl font-bold text-white md:text-4xl">59,000원</p>
         </div>
         <div className="mt-[26px] flex justify-center md:mt-[72px]">
           <Link
-            href="https://festa.io/events/4990"
+            href="https://www.ticketa.co/event/1"
             target="_blank"
             className="flex w-full justify-center rounded-[10px] bg-gradient-to-r from-[#5180FF] to-[#215BF6] py-5 font-semibold text-white md:w-[448px] md:py-7 md:text-xl"
           >
