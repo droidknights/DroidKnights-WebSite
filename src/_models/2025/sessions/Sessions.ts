@@ -20,7 +20,7 @@ export interface SessionDetail {
 
 export const sessionList: { title: string; speaker: string }[] = [
   {
-    title: "N가지 상황의 스크롤 뷰에서 영상 로직 대응하기",
+    title: "다양한 스크롤 뷰에서의 영상 재생",
     speaker: "이가은",
   },
   {
@@ -32,7 +32,7 @@ export const sessionList: { title: string; speaker: string }[] = [
     speaker: "양찬석",
   },
   {
-    title: "Android에서 가능한 모든 AI",
+    title: "Android에서 실현 가능한 모든 AI",
     speaker: "강사룡",
   },
   {
@@ -44,7 +44,7 @@ export const sessionList: { title: string; speaker: string }[] = [
     speaker: "김호중",
   },
   {
-    title: "enabledEdgeToEdge 우당탕탕 적용기",
+    title: "나도 edgeToEdge 적용하기 싫어. 근데 누군가는 해야 하잖아?",
     speaker: "이지훈",
   },
   {
@@ -52,15 +52,15 @@ export const sessionList: { title: string; speaker: string }[] = [
     speaker: "옥수환",
   },
   {
-    title: "ReadMoreText: 긴 텍스트 효과적으로 다루기",
+    title: "ReadMoreTextView: 텍스트 '더보기' 기능 구현하기",
     speaker: "안성용",
   },
   {
-    title: "여러분의 클린 아키텍처는 틀렸습니다.",
+    title: "당신의 클린아키텍처는 틀렸다",
     speaker: "박상권",
   },
   {
-    title: "컴포즈 스냅샷 내부원리 찍먹하기",
+    title: "컴포즈 스냅샷 내부원리 찍어먹기",
     speaker: "강다현",
   },
   {
@@ -72,7 +72,7 @@ export const sessionList: { title: string; speaker: string }[] = [
     speaker: "윤희성",
   },
   {
-    title: "레드팀 화이트해커의 Offensive 관점 안드로이드 앱 보안(feat. CVE-2025-**)",
+    title: "레드팀 화이트해커의 Offensive 관점 안드로이드 앱 보안(feat. CVE-2025-****)",
     speaker: "김주원",
   },
 ];
