@@ -20,7 +20,7 @@ export function Ticket() {
         </div>
         <div className="mt-[26px] flex justify-center md:mt-[72px]">
           <Link
-            href="https://www.ticketa.co/event/1"
+            href="https://www.ticketa.co/events/1"
             target="_blank"
             className="flex w-full justify-center rounded-[10px] bg-gradient-to-r from-[#5180FF] to-[#215BF6] py-5 font-semibold text-white md:w-[448px] md:py-7 md:text-xl"
           >
