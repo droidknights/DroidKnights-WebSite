@@ -1,24 +1,31 @@
-import { COUNT_BEFORE_LUNCH, Track } from "@/src/_models/2025/sessions/Tracks";
+import { COUNT_BEFORE_LUNCH, tracks } from "@/src/_models/2025/sessions/Tracks";
 
 import { SessionItem } from "./SessionItem";
 
-export const TrackBox = ({ track, className }: { track: Track; className?: string }) => {
+export const TrackBox = () => {
   return (
-    <div className={`w-full ${className}`}>
-      <Breaktime time="09:30 - 10:40" title="행사 등록" />
+    <div className="w-full">
+      <Breaktime title="행사 등록" time="09:30 - 10:40" />
       <DividerSession />
-      {track.sessions.map((session, index) => (
-        <div key={`${session.title}${session.speaker}`}>
-          <SessionItem session={session} />
-          <DividerSession />
-          {index === COUNT_BEFORE_LUNCH - 1 && (
-            <div>
-              <Breaktime time="12:35 - 13:55" title="점심 시간" />
+      <Breaktime title="KEYNOTE" time="10:40 - 11:00" className="bg-white/10" />
+      <DividerSession />
+      <div className="grid grid-cols-2 gap-x-0.5">
+        {tracks[0].map((session, index) => (
+          <div key={`track-row-${index}`} className="contents">
+            <SessionItem session={tracks[0][index]} />
+            <SessionItem session={tracks[1][index]} />
+            <div className="col-span-2">
               <DividerSession />
             </div>
-          )}
-        </div>
-      ))}
+            {index === COUNT_BEFORE_LUNCH - 1 && (
+              <div className="col-span-2">
+                <Breaktime title="점심 시간" time="12:35 - 13:55" />
+                <DividerSession />
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
@@ -27,11 +34,11 @@ export const DividerSession = () => {
   return <div className="h-px w-full bg-white/60" />;
 };
 
-const Breaktime = ({ time, title }: { time: string; title: string }) => {
+const Breaktime = ({ title, time, className }: { title: string; time: string; className?: string }) => {
   return (
-    <div className="my-[5px] flex items-center justify-center bg-[#215BF6] px-4 py-2.5 md:py-[18px]">
-      <p className="mr-2 text-sm font-bold text-white md:text-xl">{time}</p>
+    <div className={`flex h-[64px] items-center justify-center bg-[#215BF6] px-4 ${className}`}>
       <p className="text-sm font-bold text-white md:text-xl">{title}</p>
+      <p className="ml-2.5 text-sm font-bold text-[#FAFAFA]/60 md:text-xl">{time}</p>
     </div>
   );
 };

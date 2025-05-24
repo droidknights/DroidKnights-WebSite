@@ -8,7 +8,7 @@ import { Terms } from "@/src/_components/2025/Terms";
 
 import { Sponsors } from "../_components/2025/Sponsors";
 import { Ticket } from "../_components/2025/Ticket";
-import { SessionList } from "../_components/2025/sessions/SessionList";
+import { Timetable } from "../_components/2025/sessions/Timetable";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
         <main>
           <div>
             <Description />
-            <SessionList />
+            <Timetable />
             <Ticket />
             <Location />
             <Sponsors />

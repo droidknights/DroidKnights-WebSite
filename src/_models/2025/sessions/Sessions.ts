@@ -6,10 +6,8 @@ export enum Type {
 export interface Session {
   title: string;
   speaker: string;
-  type?: Type;
   startTime: string;
   endTime: string;
-  detail?: SessionDetail;
 }
 
 export interface SessionDetail {

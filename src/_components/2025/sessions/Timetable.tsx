@@ -18,34 +18,17 @@ export const Timetable = () => {
             * 세션 일정 및 내용은 상황에 따라 조정될 수 있습니다
           </p>
         </div>
-        <div className="grid w-full grid-cols-2 gap-x-1 md:gap-x-2">
-          <Tab tabNumber={1} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
-          <Tab tabNumber={2} currentTrackNumber={trackNumber} setCurrentTrackNumber={setTrackNumber} />
+        <div className="grid w-full grid-cols-2 gap-0.5">
+          <Tab tabNumber={1} />
+          <Tab tabNumber={2} />
         </div>
         <DividerSession />
-        <TrackBox track={tracks[trackNumber - 1]} />
+        <TrackBox />
       </div>
     </section>
   );
 };
 
-function Tab({
-  tabNumber,
-  currentTrackNumber,
-  setCurrentTrackNumber,
-}: {
-  tabNumber: number;
-  currentTrackNumber: number;
-  setCurrentTrackNumber: (trackNumber: number) => void;
-}) {
-  return (
-    <div
-      className={`cursor-pointer rounded-t-[20px] py-3 text-center font-bold md:py-5 md:text-xl ${
-        tabNumber === currentTrackNumber ? "bg-white text-black" : "bg-white/20 text-white"
-      }`}
-      onClick={() => setCurrentTrackNumber(tabNumber)}
-    >
-      {`Track ${tabNumber}`}
-    </div>
-  );
+function Tab({ tabNumber }: { tabNumber: number }) {
+  return <div className="bg-white p-6 text-center font-bold text-black md:text-2xl">{`Track ${tabNumber}`}</div>;
 }
