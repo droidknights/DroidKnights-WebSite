@@ -1,13 +1,8 @@
 "use client";
 
-import { useState } from "react";
-
-import { tracks } from "@/src/_models/2025/sessions/Tracks";
-
 import { DividerSession, TrackBox } from "./track/TrackBox";
 
 export const Timetable = () => {
-  const [trackNumber, setTrackNumber] = useState(1);
   return (
     <section className="bg-[#0F0F0F]">
       <div className="px-6 py-20 md:px-20 md:py-40 lg:px-40">
