@@ -15,3 +15,10 @@ export const goldSponsors: Sponsor[] = [
     link: "https://www.jetbrains.com",
   },
 ];
+
+export const platinumSponsors: Sponsor[] = [
+  {
+    logo: "revenuecat.png",
+    link: "https://www.revenuecat.com",
+  },
+];

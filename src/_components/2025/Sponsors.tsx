@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Level, Sponsor, goldSponsors } from "@/src/_models/2025/Sponsors";
+import { Level, Sponsor, goldSponsors, platinumSponsors } from "@/src/_models/2025/Sponsors";
 
 export const Sponsors = () => {
   return (
@@ -11,7 +11,10 @@ export const Sponsors = () => {
           <h2 className="mb-2 text-sm font-medium text-[#FAFAFA] md:mb-4 md:text-2xl">SPONSOR</h2>
           <h3 className="text-2xl font-bold text-[#FAFAFA] md:text-5xl xl:text-6xl">함께하는 기업</h3>
         </div>
-        <div className="mx-auto max-w-[1040px] space-y-[72px]">{SponsorGroup(Level.GOLD)}</div>
+        <div className="mx-auto max-w-[1040px] space-y-[72px]">
+          {SponsorGroup(Level.PLATINUM)}
+          {SponsorGroup(Level.GOLD)}
+        </div>
       </div>
     </section>
   );
@@ -20,6 +23,7 @@ export const Sponsors = () => {
 const SponsorGroup = (level: Level) => {
   let sponsors: Sponsor[] = [];
   if (level === Level.PLATINUM) {
+    sponsors = platinumSponsors;
   } else if (level === Level.GOLD) {
     sponsors = goldSponsors;
   } else if (level === Level.SILVER) {
@@ -49,7 +53,7 @@ const SponsorGroup = (level: Level) => {
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-full"
+                className="h-full w-full object-contain"
               />
             </div>
           </Link>
