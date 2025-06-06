@@ -8,10 +8,11 @@ export interface Session {
   speaker: string;
   startTime: string;
   endTime: string;
+  detail: SessionDetail;
 }
 
 export interface SessionDetail {
-  company?: string;
+  company: string;
   description: string;
   speakerDescription: string;
 }
