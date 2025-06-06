@@ -1,8 +1,5 @@
 "use client";
 
-import { tracks } from "@/src/_models/2025/sessions/Tracks";
-
-import { SessionItem } from "./track/SessionItem";
 import { DividerSession, TrackBox } from "./track/TrackBox";
 
 export const Timetable = () => {
