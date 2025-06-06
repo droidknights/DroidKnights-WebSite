@@ -24,14 +24,18 @@ export const Timetable = () => {
         <div>
           <div className="bg-white p-6 text-center font-bold text-black md:text-2xl">Program</div>
           <DividerSession />
-          <div className="grid grid-cols-2 gap-x-0.5">
+          <div className="grid grid-cols-1 gap-0.5 md:grid-cols-3">
             <div className="h-full bg-white/10 p-6 text-left">
-              <p className="mb-2 text-sm font-medium text-[#888888]">13:55 - 14:25</p>
-              <p className="mb-2 font-bold text-white md:text-xl">이력서 피드백 1</p>
+              <p className="mb-2 text-[13px] font-bold text-[#5180FF] md:text-base">13:55 - 14:25</p>
+              <p className="font-bold text-white md:text-xl">이력서 피드백 1</p>
             </div>
             <div className="h-full bg-white/10 p-6 text-left">
-              <p className="mb-2 text-sm font-medium text-[#888888]">14:45 - 15 :15</p>
-              <p className="mb-2 font-bold text-white md:text-xl">이력서 피드백 2</p>
+              <p className="mb-2 text-[13px] font-bold text-[#5180FF] md:text-base">14:45 - 15 :15</p>
+              <p className="font-bold text-white md:text-xl">이력서 피드백 2</p>
+            </div>
+            <div className="h-full bg-white/10 p-6 text-left">
+              <p className="mb-2 text-[13px] font-bold text-[#5180FF] md:text-base">16:40 - 17 :10</p>
+              <p className="font-bold text-white md:text-xl">드로이드나이츠 컨퍼런스 앱 개발기</p>
             </div>
           </div>
         </div>
