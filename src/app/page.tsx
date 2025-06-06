@@ -65,14 +65,14 @@ function Description() {
       <div className="relative mx-auto flex max-w-[1366px] flex-col items-center px-6 md:px-20">
         <img className="absolute mt-10 hidden md:block" src="/2024/arrow_down.svg" />
         <div className="py-20 text-center md:py-40">
-          <h1 className="mb-4 text-2xl font-bold leading-[1.4] md:mb-6 md:text-5xl md:leading-[1.4]">
+          <h1 className="mb-4 text-xl font-bold leading-[1.4] md:mb-6 md:text-5xl md:leading-[1.4]">
             대한민국 최대
             <br />
             안드로이드 개발자들만을 위한
             <br />
             드로이드나이츠 2025
           </h1>
-          <h2 className="text-xl font-medium leading-[1.3] md:text-4xl md:leading-[1.3]">
+          <h2 className="text-lg font-medium leading-[1.3] md:text-4xl md:leading-[1.3]">
             주니어부터 시니어까지 모두가 공감하고
             <br />
             즐길 수 있는 지식의 장으로 만들고자 합니다.
