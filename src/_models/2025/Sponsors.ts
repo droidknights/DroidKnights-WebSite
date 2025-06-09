@@ -9,6 +9,13 @@ export enum Level {
   SILVER = "SILVER",
 }
 
+export const platinumSponsors: Sponsor[] = [
+  {
+    logo: "revenuecat.png",
+    link: "https://www.revenuecat.com",
+  },
+];
+
 export const goldSponsors: Sponsor[] = [
   {
     logo: "jetbrains.png",
@@ -16,9 +23,9 @@ export const goldSponsors: Sponsor[] = [
   },
 ];
 
-export const platinumSponsors: Sponsor[] = [
+export const silverSponsors: Sponsor[] = [
   {
-    logo: "revenuecat.png",
-    link: "https://www.revenuecat.com",
+    logo: "koin.png",
+    link: "https://insert-koin.io/",
   },
 ];

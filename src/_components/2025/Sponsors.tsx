@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Level, Sponsor, goldSponsors, platinumSponsors } from "@/src/_models/2025/Sponsors";
+import { Level, Sponsor, goldSponsors, platinumSponsors, silverSponsors } from "@/src/_models/2025/Sponsors";
 
 export const Sponsors = () => {
   return (
@@ -14,6 +14,7 @@ export const Sponsors = () => {
         <div className="mx-auto max-w-[1040px] space-y-[72px]">
           {SponsorGroup(Level.PLATINUM)}
           {SponsorGroup(Level.GOLD)}
+          {SponsorGroup(Level.SILVER)}
         </div>
       </div>
     </section>
@@ -27,6 +28,7 @@ const SponsorGroup = (level: Level) => {
   } else if (level === Level.GOLD) {
     sponsors = goldSponsors;
   } else if (level === Level.SILVER) {
+    sponsors = silverSponsors;
   }
 
   return (
