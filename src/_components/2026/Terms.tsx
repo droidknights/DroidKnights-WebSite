@@ -12,7 +12,7 @@ export function Terms() {
             <h3 className="mb-4 text-center leading-normal font-bold text-white md:mb-8 md:text-[32px] md:leading-normal">
               안드로이드 개발자들의 행사가 궁금하다면?
               <br />
-              드로이드나이츠 2025를 만나보세요.
+              드로이드나이츠 2026를 만나보세요.
             </h3>
             <div className="flex justify-center">
               <button

@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm ls:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npm test:*)",
+      "Bash(npx tsc:*)",
+      "Bash(deno check:*)",
+      "Bash(git add:*)",
+      "Bash(git checkout:*)",
+      "Bash(git branch:*)",
+      "Bash(git worktree:*)",
+      "Bash(git fetch:*)",
+      "Bash(git stash:*)",
+      "Bash(git commit:*)",
+      "Bash(git merge:*)",
+      "Bash(git restore:*)",
+      "Bash(git pull:*)",
+      "Bash(git push:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr comment:*)",
+      "Bash(gh pr edit:*)",
+      "Bash(echo:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(source:*)",
+      "Bash(env)",
+      "Bash(touch:*)",
+      "Bash(mkdir:*)",
+      "Bash(curl:*)",
+      "Bash(node:*)",
+      "WebSearch"
+    ]
+  },
+  "enableAllProjectMcpServers": true
+}

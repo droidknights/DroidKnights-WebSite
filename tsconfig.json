@@ -11,25 +11,24 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "baseUrl": "./",
     "paths": {
-      "@/*": ["*"],
-      "@src/*": ["src/*"],
-      "@app/*": ["src/app/*"],
-      "@styles/*": ["src/_styles/*"],
-      "@components/*": ["src/_components/*"],
-      "@hooks/*": ["src/_hooks/*"],
-      "@models/*": ["src/_lib/models/*"],
-      "@lib/*": ["src/_lib/*"]
+      "@/*": ["./*"],
+      "@src/*": ["./src/*"],
+      "@app/*": ["./src/app/*"],
+      "@styles/*": ["./src/_styles/*"],
+      "@components/*": ["./src/_components/*"],
+      "@hooks/*": ["./src/_hooks/*"],
+      "@lib/*": ["./src/_lib/*"],
+      "@models/*": ["./src/_domain/models/*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next-env.d.ts"],
+  "include": ["**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

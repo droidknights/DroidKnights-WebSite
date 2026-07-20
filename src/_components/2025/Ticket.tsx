@@ -22,7 +22,7 @@ export function Ticket() {
           <Link
             href="https://www.ticketa.co/events/1"
             target="_blank"
-            className="flex w-full justify-center rounded-[10px] bg-gradient-to-r from-[#5180FF] to-[#215BF6] py-5 font-semibold text-white md:w-[448px] md:py-7 md:text-xl"
+            className="flex w-full justify-center rounded-[10px] bg-linear-to-r from-[#5180FF] to-[#215BF6] py-5 font-semibold text-white md:w-[448px] md:py-7 md:text-xl"
           >
             티켓 구매하러 가기 →
           </Link>

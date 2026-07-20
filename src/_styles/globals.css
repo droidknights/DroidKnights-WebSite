@@ -1,10 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-body {
-  color: #222222;
-  background: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  --z-index-hide: -1;
+  --z-index-base: 0;
+  --z-index-floating: 200;
+  --z-index-modal: 300;
+  --z-index-dropdown: 400;
+  --z-index-tooltip: 500;
+  --z-index-toast: 600;
+  --z-index-loading: 1000;
+  --z-index-max: 9999;
+}
+
+@layer base {
+  body {
+    color: #222222;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
