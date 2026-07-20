@@ -1,21 +1,35 @@
+import Image from "next/image";
+
+import { SectionHeading } from "./ui/SectionHeading";
+
 export function LastEvent() {
   return (
-    <section className="bg-linear-to-b from-[#000000] to-[#666666]">
-      <div className="pt-20 md:pt-40">
-        <div className="mb-6 px-6 text-center md:mb-[72px]">
-          <h2 className="mb-2 text-sm font-medium text-[#5180FF] md:mb-4 md:text-2xl">2025 Droid Knights</h2>
-          <h3 className="text-2xl font-bold text-white md:text-5xl">지난 행사 살펴보기</h3>
+    <section className="from-dk-surface to-dk-navy relative overflow-hidden border-t border-white/5 bg-linear-to-b">
+      <Image
+        src="/2026/mascot-cheer.png"
+        alt=""
+        width={140}
+        height={140}
+        aria-hidden
+        className="pointer-events-none absolute top-8 right-4 hidden w-[120px] opacity-90 drop-shadow-[0_16px_34px_rgba(123,92,255,0.5)] md:block md:w-[140px]"
+      />
+      <div className="pt-24 md:pt-40">
+        <div className="mb-8 px-6 md:mb-12">
+          <SectionHeading eyebrow="2025 Droid Knights" title="지난 행사 살펴보기" />
         </div>
-        <div className="w-full">
-          <iframe
-            width="0"
-            height="0"
-            src="https://www.youtube.com/embed/0RwSrEBW_dQ?si=DW_-_jI983C2u08a"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            className="h-[212px] w-full md:h-[443px] xl:h-[786px]"
-          ></iframe>
+        <div className="mx-auto w-full max-w-[1120px] px-6 md:px-10">
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-black/40 shadow-[0_30px_80px_rgba(11,18,48,0.6)]">
+            <iframe
+              width="0"
+              height="0"
+              src="https://www.youtube.com/embed/0RwSrEBW_dQ?si=DW_-_jI983C2u08a"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              className="h-[212px] w-full md:h-[443px] xl:h-[600px]"
+            />
+          </div>
         </div>
+        <div className="h-24 md:h-40" />
       </div>
     </section>
   );

@@ -4,14 +4,14 @@ import { useState } from "react";
 
 import { faqList } from "../../_models/2026/Faq";
 
+import { GlowSection } from "./ui/GlowSection";
+import { SectionHeading } from "./ui/SectionHeading";
+
 export function Faqs() {
   return (
-    <section className="bg-[#FAFAFA]">
-      <div className="px-6 py-20 md:px-10 md:py-40">
-        <div className="mb-6 text-center md:mb-[72px]">
-          <h2 className="mb-2 text-sm font-medium text-[#5180FF] md:mb-4 md:text-2xl">QnA</h2>
-          <h3 className="text-2xl font-bold md:text-5xl">자주 묻는 질문</h3>
-        </div>
+    <GlowSection tone="space" glow="purple" className="border-t border-white/5">
+      <div className="px-6 py-24 md:px-10 md:py-40">
+        <SectionHeading eyebrow="QnA" title="자주 묻는 질문" className="mb-8 md:mb-12" />
         <div className="mx-auto max-w-[790px]">
           <Divider />
           {faqList.map((qna) => (
@@ -22,31 +22,47 @@ export function Faqs() {
           ))}
         </div>
       </div>
-    </section>
+    </GlowSection>
   );
 }
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex items-start justify-between py-[15px]" onClick={() => setOpen(!open)}>
+    <button
+      type="button"
+      className="flex w-full items-start justify-between py-[15px] text-left"
+      onClick={() => setOpen(!open)}
+      aria-expanded={open}
+    >
       <div className="mr-4">
-        <div className="font-semibold md:text-2xl">{question}</div>
-        <div
-          className={`text-sm font-medium text-[#888888] md:text-xl ${open ? "visible mt-2" : "invisible mt-0 h-0"}`}
-        >
+        <div className="text-dk-ink font-semibold md:text-2xl">{question}</div>
+        <div className={`text-dk-muted text-sm font-medium md:text-xl ${open ? "visible mt-2" : "invisible mt-0 h-0"}`}>
           {answer}
         </div>
       </div>
-      <img
-        src={`${open ? "/2024/qna/minus.svg" : "/2024/qna/plus.svg"}`}
-        alt="qna arrow"
-        className="h-6 w-6 shrink-0 md:h-8 md:w-8"
-      />
-    </div>
+      <ToggleIcon open={open} />
+    </button>
+  );
+}
+
+function ToggleIcon({ open }: { open: boolean }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="text-dk-lavender h-6 w-6 shrink-0 md:h-8 md:w-8"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      aria-hidden
+    >
+      <path d="M5 12h14" />
+      {!open && <path d="M12 5v14" />}
+    </svg>
   );
 }
 
 function Divider() {
-  return <div className="h-px w-full bg-[#0F0F0F]" />;
+  return <div className="h-px w-full bg-white/10" />;
 }

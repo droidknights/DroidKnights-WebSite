@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
+import { Footer } from "@/src/_components/2024/Footer";
 import { LastEvent } from "@/src/_components/2024/LastEvent";
 import { Location } from "@/src/_components/2024/Location";
 import { QnaCard } from "@/src/_components/2024/QnaCard";
@@ -8,7 +9,6 @@ import { Sponsor } from "@/src/_components/2024/Sponsor";
 import { Terms } from "@/src/_components/2024/Terms";
 import { Ticket } from "@/src/_components/2024/Ticket";
 import { SessionCard } from "@/src/_components/2024/sessions/SessionsCard";
-import { Footer } from "@/src/_components/Footer";
 
 export const metadata: Metadata = {
   title: "드로이드나이츠 2024",
@@ -41,18 +41,18 @@ function Header() {
     <section className="relative">
       <img
         src="/2024/banner_text.png"
-        alt="droidknights 2024 banner text"
+        alt="banner text"
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4"
       />
       <div className="fixed flex w-full justify-between p-3 backdrop-blur md:px-10 md:py-5 xl:px-20">
-        <img src="/2024/logo.svg" alt="droidknights 2024 logo" />
+        <img src="/2024/logo.svg" alt="logo" />
         <Link href="https://festa.io/events/4990" target="_blank">
           <div className="cursor-point rounded bg-white px-4 py-2 text-xs font-semibold md:px-3 md:py-[10px] md:text-sm">
             페스타 바로가기→
           </div>
         </Link>
       </div>
-      <img src="/2024/banner_bg.png" alt="droidknights 2024 banner" className="h-[640px] w-screen object-cover" />
+      <img src="/2024/banner_bg.png" alt="banner" className="h-[640px] w-screen object-cover" />
     </section>
   );
 }
