@@ -1,6 +1,20 @@
 @import "tailwindcss";
 
 @theme {
+  --color-dk-blue: #2d7bff;
+  --color-dk-purple: #7b5cff;
+  --color-dk-lavender: #b18cff;
+  --color-dk-space: #0b1230;
+  --color-dk-navy: #0e1a3a;
+  --color-dk-surface: #0a1026;
+  --color-dk-ink: #eaf0ff;
+  --color-dk-muted: #8b99c0;
+  --color-dk-subtle: #b9c6e8;
+
+  --font-display: var(--font-space-grotesk);
+  --font-kr: var(--font-noto);
+  --font-code: var(--font-roboto-mono);
+
   --z-index-hide: -1;
   --z-index-base: 0;
   --z-index-floating: 200;
@@ -10,6 +24,22 @@
   --z-index-toast: 600;
   --z-index-loading: 1000;
   --z-index-max: 9999;
+}
+
+.dk-2026 {
+  --color-dk-blue: #2d7bff;
+  --color-dk-purple: #7b5cff;
+  --color-dk-lavender: #b18cff;
+  --color-dk-space: #0b1230;
+  --color-dk-navy: #0e1a3a;
+  --color-dk-surface: #0a1026;
+  --color-dk-ink: #eaf0ff;
+  --color-dk-muted: #8b99c0;
+  --color-dk-subtle: #b9c6e8;
+
+  --font-display: var(--font-space-grotesk);
+  --font-kr: var(--font-noto);
+  --font-code: var(--font-roboto-mono);
 }
 
 @layer base {

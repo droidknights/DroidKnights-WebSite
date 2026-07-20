@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 
-import { fontPretendardJP } from "../_styles/fonts";
 import "../_styles/globals.css";
 
 export const metadata: Metadata = {
@@ -17,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={fontPretendardJP.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

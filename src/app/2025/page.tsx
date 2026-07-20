@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Faqs } from "@/src/_components/2025/Faqs";
+import { Footer } from "@/src/_components/2025/Footer";
 import { LastEvent } from "@/src/_components/2025/LastEvent";
 import { Location } from "@/src/_components/2025/Location";
 import { Sponsors } from "@/src/_components/2025/Sponsors";
 import { Terms } from "@/src/_components/2025/Terms";
 import { Ticket } from "@/src/_components/2025/Ticket";
 import { Timetable } from "@/src/_components/2025/sessions/Timetable";
-import { Footer } from "@/src/_components/Footer";
 
 export const metadata: Metadata = {
   title: "드로이드나이츠 2025",
@@ -23,14 +23,7 @@ export default function Home() {
       <div>
         <Header />
         <div className="bg-[#0F0F0F] pt-[77px]">
-          <Image
-            src="/2025/banner.png"
-            alt="droidknights 2025 banner"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-full"
-          />
+          <Image src="/2025/banner.png" alt="banner" width={0} height={0} sizes="100vw" className="w-full" />
         </div>
         <main>
           <div>
@@ -55,7 +48,7 @@ function Header() {
   return (
     <header className="fixed top-0 h-[77px] w-full bg-[#0F0F0F]/20 backdrop-blur-[20px]">
       <div className="mx-auto flex h-full max-w-[1366px] items-center justify-between px-5 md:px-10">
-        <Image src="/2025/logo.png" alt="droidknights 2025 logo" width={94} height={36} />
+        <Image src="/2025/logo.png" alt="logo" width={94} height={36} />
         <Link href="https://ticketa.co/event/xxpoaaeu" target="_blank">
           <div className="cursor-point rounded bg-white px-4 py-2 text-xs font-semibold md:px-3 md:py-2.5 md:text-sm">
             티켓사러 가기→
