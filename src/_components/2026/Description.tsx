@@ -22,7 +22,7 @@ export function Description() {
         </h1>
         <p className="text-dk-muted mx-auto mt-6 max-w-[640px] text-base leading-[1.6] md:mt-8 md:text-xl">
           주니어부터 시니어까지 모두가 공감하고
-          <br className="hidden md:block" />
+          <br />
           즐길 수 있는 지식의 장으로 만들고자 합니다.
         </p>
       </div>
