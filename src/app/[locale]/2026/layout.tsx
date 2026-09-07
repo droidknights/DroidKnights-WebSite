@@ -1,7 +1,7 @@
 import { cn } from "@/src/_lib/utils/TailwindUtil";
 
-import { fontDisplay, fontKR, fontMono } from "../../_styles/fonts/2026";
-import "../../_styles/globals.css";
+import { fontDisplay, fontKR, fontMono } from "../../../_styles/fonts/2026";
+import "../../../_styles/globals.css";
 
 export default function Layout({
   children,

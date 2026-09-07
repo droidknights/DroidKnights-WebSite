@@ -1,16 +1,4 @@
-export interface Qna {
-  question: string;
-  answer: string;
-}
+/** 사전(app.2024.qna.items)에 정의된 질문 키. 노출 순서를 함께 정의한다. */
+export const QNA_KEYS = ["onsiteTicket", "attendanceCertificate"] as const;
 
-export const qnaList: Qna[] = [
-  {
-    question: "Q. 행사 당일날 현장에서도 티켓 구매가 가능한가요?",
-    answer: "아니요, 현장에서는 따로 참가 신청을 받지 않습니다.",
-  },
-  {
-    question: "Q. 행사 참석확인증은 어떻게 발급받나요?",
-    answer:
-      "티켓 구매 시 참석확인증에 필요한 정보를 입력해주세요. 행사 종료 일주일 이내에 실제 참석 여부 확인 후 확인증을 발송해드리도록 하겠습니다.",
-  },
-];
+export type QnaKey = (typeof QNA_KEYS)[number];

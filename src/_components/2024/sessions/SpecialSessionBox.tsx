@@ -1,44 +1,39 @@
+import { useTranslations } from "next-intl";
+
 function Divider() {
   return <div className="h-px bg-[#46A7E0]" />;
 }
 
+/** 모바일은 제목/시간을 두 줄로, 데스크톱은 한 줄로 보여준다. */
+function SpecialSession({ title, time, className }: { title: string; time: string; className?: string }) {
+  return (
+    <div className={`text-left ${className ?? ""}`}>
+      <div className="text-xl font-semibold text-[#46A7E0] md:hidden md:text-4xl">
+        <p>{title}</p>
+        <p>{time}</p>
+      </div>
+      <div className="hidden text-xl font-semibold text-[#46A7E0] md:block md:text-4xl">
+        {title} {time}
+      </div>
+    </div>
+  );
+}
+
 export function SpecialSessionBox() {
+  const t = useTranslations("app.2024.sessions.special");
+
   return (
     <div className="mt-10 w-full md:mt-[72px]">
-      <h3 className="mb-9 mt-8 text-2xl font-bold text-white md:my-[72px] md:text-5xl xl:text-6xl">특별 세션</h3>
+      <h3 className="mt-8 mb-9 text-2xl font-bold text-white md:my-[72px] md:text-5xl xl:text-6xl">{t("title")}</h3>
       {/** 이력서 / 포트폴리오 */}
-      <div className="mb-10 text-left md:mb-20">
-        <div className="text-xl font-semibold text-[#46A7E0] md:hidden md:text-4xl">
-          <p>[이력서 포트폴리오 피드백] 사전신청자 피드백</p>
-          <p>13:55~14:25</p>
-        </div>
-        <div className="hidden text-xl font-semibold text-[#46A7E0] md:block md:text-4xl">
-          [이력서 포트폴리오 피드백] 사전신청자 피드백 13:55~14:25
-        </div>
-      </div>
-      <div className="mb-10 text-left md:mb-20">
-        <div className="text-xl font-semibold text-[#46A7E0] md:hidden md:text-4xl">
-          <p>[이력서 포트폴리오 피드백] 실시간 Q&A</p>
-          <p>14:45~15:15</p>
-        </div>
-        <div className="hidden text-xl font-semibold text-[#46A7E0] md:block md:text-4xl">
-          [이력서 포트폴리오 피드백] 실시간 Q&A 14:45~15:15
-        </div>
-      </div>
+      <SpecialSession title={t("resumeFeedback")} time={t("resumeFeedbackTime")} className="mb-10 md:mb-20" />
+      <SpecialSession title={t("resumeQna")} time={t("resumeQnaTime")} className="mb-10 md:mb-20" />
 
       {/** 라이트닝토크 */}
-      <div className="mb-3 text-left md:mb-4">
-        <div className="text-xl font-semibold text-[#46A7E0] md:hidden md:text-4xl">
-          <p>라이트닝 토크</p>
-          <p>13:20~13:55</p>
-        </div>
-        <div className="hidden text-xl font-semibold text-[#46A7E0] md:block md:text-4xl">
-          라이트닝 토크 13:20~13:55
-        </div>
-      </div>
+      <SpecialSession title={t("lightningTalk")} time={t("lightningTalkTime")} className="mb-3 md:mb-4" />
       <Divider />
       <div className="mt-3 text-left text-sm font-medium text-[#888888] md:mt-4 md:text-2xl">
-        세션보다는 가볍게 10분동안 자신의 경험, 지식, 아이디어를 공유
+        {t("lightningTalkDescription")}
       </div>
     </div>
   );

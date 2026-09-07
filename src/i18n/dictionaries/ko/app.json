@@ -1,0 +1,272 @@
+{
+  "common": {
+    "localeSwitcher": {
+      "label": "언어 선택"
+    }
+  },
+  "2024": {
+    "metadata": {
+      "title": "드로이드나이츠 2024",
+      "description": "대한민국 최대 안드로이드 개발자들만을 위한 컨퍼런스 드로이드나이츠 2024 입니다. 주니어부터 시니어까지 모두가 공감하고 즐길 수 있는 지식의 장으로 만들고자 합니다."
+    },
+    "header": {
+      "logoAlt": "드로이드나이츠 2024 로고",
+      "bannerAlt": "드로이드나이츠 2024 배너",
+      "bannerTextAlt": "드로이드나이츠 2024 배너 문구",
+      "festa": "페스타 바로가기→"
+    },
+    "description": {
+      "title": "대한민국 최대<br></br>안드로이드 개발자들만을 위한<br></br>드로이드나이츠 2024",
+      "subtitle": "주니어부터 시니어까지 모두가 공감하고<br></br>즐길 수 있는 지식의 장으로 만들고자 합니다."
+    },
+    "sessions": {
+      "eyebrow": "SESSION",
+      "title": "3가지 세션 트랙을 만나보세요",
+      "notice": "* 세션 일정 및 내용은 상황에 따라 조정될 수 있습니다",
+      "track": "Track {number}",
+      "registration": "행사 등록",
+      "registrationTime": "09:30 - 10:40",
+      "lunch": "점심 시간",
+      "lunchTime": "12:35 - 13:55",
+      "starAlt": "별",
+      "special": {
+        "title": "특별 세션",
+        "resumeFeedback": "[이력서 포트폴리오 피드백] 사전신청자 피드백",
+        "resumeFeedbackTime": "13:55~14:25",
+        "resumeQna": "[이력서 포트폴리오 피드백] 실시간 Q&A",
+        "resumeQnaTime": "14:45~15:15",
+        "lightningTalk": "라이트닝 토크",
+        "lightningTalkTime": "13:20~13:55",
+        "lightningTalkDescription": "세션보다는 가볍게 10분동안 자신의 경험, 지식, 아이디어를 공유"
+      }
+    },
+    "ticket": {
+      "eyebrow": "Ticket",
+      "title": "행사장 입장부터, 한정 굿즈까지",
+      "general": "일반",
+      "generalPrice": "49,000원",
+      "generalNote": "단체 구매 가능",
+      "student": "학생",
+      "studentPrice": "25,000원",
+      "studentNote": "고등학생까지 적용. 입장시 학생증 확인",
+      "cta": "티켓 구매하러 가기 →",
+      "notice": "*본 이벤트의 티켓은 페스타를 통해서만 구매 가능합니다."
+    },
+    "location": {
+      "eyebrow": "Location",
+      "title": "6월 11일, 코엑스에서 만나요",
+      "date": "2024년 6월 11일",
+      "dateIconAlt": "날짜",
+      "place": "삼성 코엑스 - 컨퍼런스룸E(3층)",
+      "placeIconAlt": "지도 핀",
+      "mapTitle": "행사장 지도",
+      "directions": "가는 길 찾아보기 →"
+    },
+    "sponsor": {
+      "eyebrow": "SPONSOR",
+      "title": "함께하는 기업",
+      "starAlt": "후원 등급 별",
+      "logoAlt": "후원사 로고"
+    },
+    "qna": {
+      "eyebrow": "QnA",
+      "title": "자주 묻는 질문",
+      "toggleAlt": "질문 펼치기",
+      "items": {
+        "onsiteTicket": {
+          "question": "Q. 행사 당일날 현장에서도 티켓 구매가 가능한가요?",
+          "answer": "아니요, 현장에서는 따로 참가 신청을 받지 않습니다."
+        },
+        "attendanceCertificate": {
+          "question": "Q. 행사 참석확인증은 어떻게 발급받나요?",
+          "answer": "티켓 구매 시 참석확인증에 필요한 정보를 입력해주세요. 행사 종료 일주일 이내에 실제 참석 여부 확인 후 확인증을 발송해드리도록 하겠습니다."
+        }
+      }
+    },
+    "lastEvent": {
+      "eyebrow": "2023 Droid Knights",
+      "title": "지난 행사 살펴보기",
+      "videoTitle": "2023 드로이드나이츠 다시 보기"
+    },
+    "terms": {
+      "share": {
+        "title": "안드로이드 개발자들의 행사가 궁금하다면?<br></br>드로이드나이츠 2024를 만나보세요.",
+        "button": "주변에 알리기",
+        "buttonIconAlt": "공유",
+        "copied": "클립보드에 링크가 복사되었어요."
+      },
+      "codeOfConduct": {
+        "title": "모든 참여자가 행사에<br></br>차별없이 참여할 수 있도록 노력할 것을 약속 해주세요.",
+        "button": "행동강령 살펴보기 →"
+      }
+    },
+    "footer": {
+      "copyright": "Copyright DroidKnights 2024",
+      "rights": "All Rights Reserved"
+    }
+  },
+  "2025": {
+    "metadata": {
+      "title": "드로이드나이츠 2025",
+      "description": "대한민국 최대 안드로이드 개발자들만을 위한 컨퍼런스 드로이드나이츠 2025 입니다. 주니어부터 시니어까지 모두가 공감하고 즐길 수 있는 지식의 장으로 만들고자 합니다."
+    },
+    "header": {
+      "logoAlt": "드로이드나이츠 2025 로고",
+      "bannerAlt": "드로이드나이츠 2025 배너",
+      "ticket": "티켓사러 가기→"
+    },
+    "description": {
+      "title": "대한민국 최대<br></br>안드로이드 개발자들만을 위한<br></br>드로이드나이츠 2025",
+      "subtitle": "주니어부터 시니어까지 모두가 공감하고<br></br>즐길 수 있는 지식의 장으로 만들고자 합니다."
+    },
+    "sessions": {
+      "eyebrow": "SESSION",
+      "title": "원하는 세션을 만나보세요",
+      "notice": "* 세션 일정 및 내용은 상황에 따라 조정될 수 있습니다",
+      "track": "Track {number}",
+      "registration": "행사 등록",
+      "registrationTime": "09:30 - 10:40",
+      "keynote": "KEYNOTE",
+      "keynoteTime": "10:40 - 11:00",
+      "lunch": "점심 시간",
+      "lunchTime": "12:35 - 13:55",
+      "program": {
+        "title": "Program",
+        "resumeFeedback1": "이력서 피드백 1",
+        "resumeFeedback1Time": "13:55 - 14:25",
+        "resumeFeedback2": "이력서 피드백 2",
+        "resumeFeedback2Time": "14:45 - 15:15",
+        "conferenceApp": "드로이드나이츠 컨퍼런스 앱 개발기",
+        "conferenceAppTime": "16:40 - 17:10"
+      }
+    },
+    "ticket": {
+      "eyebrow": "Ticket",
+      "title": "행사장 입장부터, 한정 굿즈까지",
+      "general": "일반",
+      "generalPrice": "59,000원",
+      "supporter": "개인후원",
+      "supporterPrice": "150,000원",
+      "cta": "티켓 구매하러 가기 →"
+    },
+    "location": {
+      "eyebrow": "Location",
+      "title": "6월 17일, 과학기술컨벤션센터에서 만나요",
+      "date": "2025년 6월 17일",
+      "dateIconAlt": "날짜",
+      "place": "과학기술컨벤션센터(ST Center)",
+      "placeIconAlt": "지도 핀",
+      "mapTitle": "행사장 지도",
+      "directions": "가는 길 찾아보기 →"
+    },
+    "sponsor": {
+      "eyebrow": "SPONSOR",
+      "title": "함께하는 기업",
+      "starAlt": "후원 등급 별",
+      "logoAlt": "후원사 로고"
+    },
+    "faqs": {
+      "eyebrow": "QnA",
+      "title": "자주 묻는 질문",
+      "toggleAlt": "질문 펼치기",
+      "items": {
+        "onsiteTicket": {
+          "question": "Q. 행사 당일 현장에서 티켓 구매가 가능한가요?",
+          "answer": "아니요. 모든 티켓은 온라인으로만 판매되며, 행사 당일 현장에서는 구매하실 수 없습니다."
+        },
+        "groupPurchase": {
+          "question": "Q. 단체로 티켓을 구매할 수 있나요?",
+          "answer": "별도의 단체구매 기능은 제공하지 않지만, 한 번에 최대 10장까지 구매하실 수 있습니다. 여러번 나누어 구매해 주세요."
+        },
+        "attendanceCertificate": {
+          "question": "Q. 참석확인증은 어떻게 발급받을 수 있나요?",
+          "answer": "예매하신 사이트의 나의 티켓 상세 화면에서, 티켓 오른쪽에 있는 [⋮] 버튼을 눌러 참석확인증을 발급받을 수 있습니다."
+        }
+      }
+    },
+    "lastEvent": {
+      "eyebrow": "2024 Droid Knights",
+      "title": "지난 행사 살펴보기",
+      "videoTitle": "2024 드로이드나이츠 다시 보기"
+    },
+    "terms": {
+      "share": {
+        "title": "안드로이드 개발자들의 행사가 궁금하다면?<br></br>드로이드나이츠 2025를 만나보세요.",
+        "button": "주변에 알리기",
+        "buttonIconAlt": "공유",
+        "copied": "클립보드에 링크가 복사되었어요."
+      },
+      "codeOfConduct": {
+        "title": "모든 참여자가 행사에<br></br>차별없이 참여할 수 있도록 노력할 것을 약속 해주세요.",
+        "button": "행동강령 살펴보기 →"
+      }
+    },
+    "footer": {
+      "copyright": "Copyright DroidKnights 2025",
+      "rights": "All Rights Reserved"
+    }
+  },
+  "2026": {
+    "metadata": {
+      "title": "드로이드나이츠 2026",
+      "description": "대한민국 최대 안드로이드 개발자 컨퍼런스 드로이드나이츠 2026 입니다. 주니어부터 시니어까지 모두가 공감하고 즐길 수 있는 지식의 장으로 만들고자 합니다."
+    },
+    "header": {
+      "logoAlt": "드로이드나이츠 2026 로고",
+      "bannerAlt": "드로이드나이츠 2026 배너"
+    },
+    "description": {
+      "eyebrow": "Android Conference",
+      "title": "대한민국 최대<br></br>안드로이드 개발자 컨퍼런스<br></br><highlight>드로이드나이츠 2026</highlight>",
+      "subtitle": "주니어부터 시니어까지 모두가 공감하고<br></br>즐길 수 있는 지식의 장으로 만들고자 합니다."
+    },
+    "location": {
+      "eyebrow": "Location",
+      "title": "11월 2일, 과학기술컨벤션센터에서 만나요",
+      "date": "2026년 11월 2일",
+      "dateIconAlt": "날짜",
+      "place": "과학기술컨벤션센터(ST Center)",
+      "placeIconAlt": "지도 핀",
+      "mapTitle": "행사장 지도",
+      "directions": "가는 길 찾아보기 →"
+    },
+    "faqs": {
+      "eyebrow": "QnA",
+      "title": "자주 묻는 질문",
+      "items": {
+        "onsiteTicket": {
+          "question": "Q. 행사 당일 현장에서 티켓 구매가 가능한가요?",
+          "answer": "아니요. 모든 티켓은 온라인으로만 판매되며, 행사 당일 현장에서는 구매하실 수 없습니다."
+        },
+        "groupPurchase": {
+          "question": "Q. 단체로 티켓을 구매할 수 있나요?",
+          "answer": "별도의 단체구매 기능은 제공하지 않지만, 한 번에 최대 10장까지 구매하실 수 있습니다. 여러번 나누어 구매해 주세요."
+        },
+        "attendanceCertificate": {
+          "question": "Q. 참석확인증은 어떻게 발급받을 수 있나요?",
+          "answer": "예매하신 사이트의 나의 티켓 상세 화면에서, 티켓 오른쪽에 있는 [⋮] 버튼을 눌러 참석확인증을 발급받을 수 있습니다."
+        }
+      }
+    },
+    "lastEvent": {
+      "eyebrow": "2025 Droid Knights",
+      "title": "지난 행사 살펴보기",
+      "videoTitle": "2025 드로이드나이츠 다시 보기"
+    },
+    "terms": {
+      "share": {
+        "title": "안드로이드 개발자들의 행사가 궁금하다면?<br></br>드로이드나이츠 2026를 만나보세요.",
+        "button": "주변에 알리기",
+        "copied": "클립보드에 링크가 복사되었어요."
+      },
+      "codeOfConduct": {
+        "title": "모든 참여자가 행사에<br></br>차별없이 참여할 수 있도록 노력할 것을 약속 해주세요.",
+        "button": "행동강령 살펴보기 →"
+      }
+    },
+    "footer": {
+      "copyright": "Copyright DroidKnights 2026",
+      "rights": "All Rights Reserved"
+    }
+  }
+}

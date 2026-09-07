@@ -1,10 +1,13 @@
 import { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
+/**
+ * Next.js 설정
+ */
 const nextConfig: NextConfig = {
   poweredByHeader: false,
-  async rewrites() {
-    return [{ source: "/", destination: "/2026" }];
-  },
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+
+export default withNextIntl(nextConfig);

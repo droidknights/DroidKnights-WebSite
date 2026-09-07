@@ -1,22 +1,25 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
-import { faqList } from "../../_models/2026/Faq";
+import { FAQ_KEYS } from "../../_models/2026/Faq";
 
 import { GlowSection } from "./ui/GlowSection";
 import { SectionHeading } from "./ui/SectionHeading";
 
 export function Faqs() {
+  const t = useTranslations("app.2026.faqs");
+
   return (
     <GlowSection tone="space" glow="purple" className="border-t border-white/5">
       <div className="px-6 py-24 md:px-10 md:py-40">
-        <SectionHeading eyebrow="QnA" title="자주 묻는 질문" className="mb-8 md:mb-12" />
+        <SectionHeading eyebrow={t("eyebrow")} title={t("title")} className="mb-8 md:mb-12" />
         <div className="mx-auto max-w-[790px]">
           <Divider />
-          {faqList.map((qna) => (
-            <div key={qna.question}>
-              <FaqItem question={qna.question} answer={qna.answer} />
+          {FAQ_KEYS.map((key) => (
+            <div key={key}>
+              <FaqItem question={t(`items.${key}.question`)} answer={t(`items.${key}.answer`)} />
               <Divider />
             </div>
           ))}

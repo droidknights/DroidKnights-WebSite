@@ -1,5 +1,5 @@
-import { fontPretendardJP } from "../../_styles/fonts/2024";
-import "../../_styles/globals.css";
+import { fontPretendardJP } from "../../../_styles/fonts/2024";
+import "../../../_styles/globals.css";
 
 export default function Layout({
   children,

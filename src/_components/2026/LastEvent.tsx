@@ -1,8 +1,13 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 import { SectionHeading } from "./ui/SectionHeading";
 
 export function LastEvent() {
+  const t = useTranslations("app.2026.lastEvent");
+
   return (
     <section className="from-dk-surface to-dk-navy relative overflow-hidden border-t border-white/5 bg-linear-to-b">
       <Image
@@ -15,7 +20,7 @@ export function LastEvent() {
       />
       <div className="pt-24 md:pt-40">
         <div className="mb-8 px-6 md:mb-12">
-          <SectionHeading eyebrow="2025 Droid Knights" title="지난 행사 살펴보기" />
+          <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
         </div>
         <div className="mx-auto w-full max-w-[1120px] px-6 md:px-10">
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-black/40 shadow-[0_30px_80px_rgba(11,18,48,0.6)]">
@@ -23,7 +28,7 @@ export function LastEvent() {
               width="0"
               height="0"
               src="https://www.youtube.com/embed/0RwSrEBW_dQ?si=DW_-_jI983C2u08a"
-              title="YouTube video player"
+              title={t("videoTitle")}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               className="h-[212px] w-full md:h-[443px] xl:h-[600px]"
             />

@@ -1,0 +1,272 @@
+{
+  "common": {
+    "localeSwitcher": {
+      "label": "Select language"
+    }
+  },
+  "2024": {
+    "metadata": {
+      "title": "Droid Knights 2024",
+      "description": "Droid Knights 2024 is Korea's largest conference built just for Android developers. We aim to build a place of shared knowledge that everyone can enjoy, from juniors to seniors."
+    },
+    "header": {
+      "logoAlt": "Droid Knights 2024 logo",
+      "bannerAlt": "Droid Knights 2024 banner",
+      "bannerTextAlt": "Droid Knights 2024 banner text",
+      "festa": "Go to Festa→"
+    },
+    "description": {
+      "title": "Korea's largest conference<br></br>built just for Android developers<br></br>Droid Knights 2024",
+      "subtitle": "A place of shared knowledge that everyone can enjoy,<br></br>from juniors to seniors."
+    },
+    "sessions": {
+      "eyebrow": "SESSION",
+      "title": "Three session tracks to explore",
+      "notice": "* The session schedule and content may change.",
+      "track": "Track {number}",
+      "registration": "Registration",
+      "registrationTime": "09:30 - 10:40",
+      "lunch": "Lunch break",
+      "lunchTime": "12:35 - 13:55",
+      "starAlt": "Star",
+      "special": {
+        "title": "Special sessions",
+        "resumeFeedback": "[Resume & portfolio feedback] Feedback for pre-registered attendees",
+        "resumeFeedbackTime": "13:55~14:25",
+        "resumeQna": "[Resume & portfolio feedback] Live Q&A",
+        "resumeQnaTime": "14:45~15:15",
+        "lightningTalk": "Lightning talks",
+        "lightningTalkTime": "13:20~13:55",
+        "lightningTalkDescription": "Lighter than a full session: share your experience, knowledge, or ideas in 10 minutes."
+      }
+    },
+    "ticket": {
+      "eyebrow": "Ticket",
+      "title": "From entry to limited-edition goods",
+      "general": "General",
+      "generalPrice": "49,000 KRW",
+      "generalNote": "Group purchase available",
+      "student": "Student",
+      "studentPrice": "25,000 KRW",
+      "studentNote": "Up to high school students. Student ID checked at entry.",
+      "cta": "Buy a ticket →",
+      "notice": "* Tickets for this event are sold through Festa only."
+    },
+    "location": {
+      "eyebrow": "Location",
+      "title": "See you on June 11 at COEX",
+      "date": "June 11, 2024",
+      "dateIconAlt": "Date",
+      "place": "Samsung COEX - Conference Room E (3F)",
+      "placeIconAlt": "Map pin",
+      "mapTitle": "Venue map",
+      "directions": "Get directions →"
+    },
+    "sponsor": {
+      "eyebrow": "SPONSOR",
+      "title": "Our sponsors",
+      "starAlt": "Sponsor tier star",
+      "logoAlt": "Sponsor logo"
+    },
+    "qna": {
+      "eyebrow": "QnA",
+      "title": "Frequently asked questions",
+      "toggleAlt": "Expand question",
+      "items": {
+        "onsiteTicket": {
+          "question": "Q. Can I buy a ticket on site on the day of the event?",
+          "answer": "No, we do not take registrations on site."
+        },
+        "attendanceCertificate": {
+          "question": "Q. How do I get a certificate of attendance?",
+          "answer": "Enter the details needed for the certificate when you buy your ticket. We will confirm your attendance and send the certificate within a week after the event."
+        }
+      }
+    },
+    "lastEvent": {
+      "eyebrow": "2023 Droid Knights",
+      "title": "Look back at the last event",
+      "videoTitle": "Droid Knights 2023 recap"
+    },
+    "terms": {
+      "share": {
+        "title": "Curious about a conference built for Android developers?<br></br>Come and meet Droid Knights 2024.",
+        "button": "Share it",
+        "buttonIconAlt": "Share",
+        "copied": "The link has been copied to your clipboard."
+      },
+      "codeOfConduct": {
+        "title": "Please promise to help make this event<br></br>one that every attendee can join without discrimination.",
+        "button": "Read the code of conduct →"
+      }
+    },
+    "footer": {
+      "copyright": "Copyright DroidKnights 2024",
+      "rights": "All Rights Reserved"
+    }
+  },
+  "2025": {
+    "metadata": {
+      "title": "Droid Knights 2025",
+      "description": "Droid Knights 2025 is Korea's largest conference built just for Android developers. We aim to build a place of shared knowledge that everyone can enjoy, from juniors to seniors."
+    },
+    "header": {
+      "logoAlt": "Droid Knights 2025 logo",
+      "bannerAlt": "Droid Knights 2025 banner",
+      "ticket": "Buy a ticket→"
+    },
+    "description": {
+      "title": "Korea's largest conference<br></br>built just for Android developers<br></br>Droid Knights 2025",
+      "subtitle": "A place of shared knowledge that everyone can enjoy,<br></br>from juniors to seniors."
+    },
+    "sessions": {
+      "eyebrow": "SESSION",
+      "title": "Find the sessions you want",
+      "notice": "* The session schedule and content may change.",
+      "track": "Track {number}",
+      "registration": "Registration",
+      "registrationTime": "09:30 - 10:40",
+      "keynote": "KEYNOTE",
+      "keynoteTime": "10:40 - 11:00",
+      "lunch": "Lunch break",
+      "lunchTime": "12:35 - 13:55",
+      "program": {
+        "title": "Program",
+        "resumeFeedback1": "Resume feedback 1",
+        "resumeFeedback1Time": "13:55 - 14:25",
+        "resumeFeedback2": "Resume feedback 2",
+        "resumeFeedback2Time": "14:45 - 15:15",
+        "conferenceApp": "Building the Droid Knights conference app",
+        "conferenceAppTime": "16:40 - 17:10"
+      }
+    },
+    "ticket": {
+      "eyebrow": "Ticket",
+      "title": "From entry to limited-edition goods",
+      "general": "General",
+      "generalPrice": "59,000 KRW",
+      "supporter": "Individual supporter",
+      "supporterPrice": "150,000 KRW",
+      "cta": "Buy a ticket →"
+    },
+    "location": {
+      "eyebrow": "Location",
+      "title": "See you on June 17 at the Science & Technology Convention Center",
+      "date": "June 17, 2025",
+      "dateIconAlt": "Date",
+      "place": "Science & Technology Convention Center (ST Center)",
+      "placeIconAlt": "Map pin",
+      "mapTitle": "Venue map",
+      "directions": "Get directions →"
+    },
+    "sponsor": {
+      "eyebrow": "SPONSOR",
+      "title": "Our sponsors",
+      "starAlt": "Sponsor tier star",
+      "logoAlt": "Sponsor logo"
+    },
+    "faqs": {
+      "eyebrow": "QnA",
+      "title": "Frequently asked questions",
+      "toggleAlt": "Expand question",
+      "items": {
+        "onsiteTicket": {
+          "question": "Q. Can I buy a ticket on site on the day of the event?",
+          "answer": "No. All tickets are sold online only and cannot be purchased on site on the day of the event."
+        },
+        "groupPurchase": {
+          "question": "Q. Can I buy tickets as a group?",
+          "answer": "There is no separate group purchase option, but you can buy up to 10 tickets at a time. Please split larger orders into several purchases."
+        },
+        "attendanceCertificate": {
+          "question": "Q. How do I get a certificate of attendance?",
+          "answer": "On the ticket detail screen of the site you booked through, tap the [⋮] button to the right of the ticket to issue a certificate of attendance."
+        }
+      }
+    },
+    "lastEvent": {
+      "eyebrow": "2024 Droid Knights",
+      "title": "Look back at the last event",
+      "videoTitle": "Droid Knights 2024 recap"
+    },
+    "terms": {
+      "share": {
+        "title": "Curious about a conference built for Android developers?<br></br>Come and meet Droid Knights 2025.",
+        "button": "Share it",
+        "buttonIconAlt": "Share",
+        "copied": "The link has been copied to your clipboard."
+      },
+      "codeOfConduct": {
+        "title": "Please promise to help make this event<br></br>one that every attendee can join without discrimination.",
+        "button": "Read the code of conduct →"
+      }
+    },
+    "footer": {
+      "copyright": "Copyright DroidKnights 2025",
+      "rights": "All Rights Reserved"
+    }
+  },
+  "2026": {
+    "metadata": {
+      "title": "Droid Knights 2026",
+      "description": "Droid Knights 2026 is Korea's largest conference for Android developers. We aim to build a place of shared knowledge that everyone can enjoy, from juniors to seniors."
+    },
+    "header": {
+      "logoAlt": "Droid Knights 2026 logo",
+      "bannerAlt": "Droid Knights 2026 banner"
+    },
+    "description": {
+      "eyebrow": "Android Conference",
+      "title": "Korea's largest<br></br>conference for Android developers<br></br><highlight>Droid Knights 2026</highlight>",
+      "subtitle": "A place of shared knowledge that everyone can enjoy,<br></br>from juniors to seniors."
+    },
+    "location": {
+      "eyebrow": "Location",
+      "title": "See you on November 2 at the Science & Technology Convention Center",
+      "date": "November 2, 2026",
+      "dateIconAlt": "Date",
+      "place": "Science & Technology Convention Center (ST Center)",
+      "placeIconAlt": "Map pin",
+      "mapTitle": "Venue map",
+      "directions": "Get directions →"
+    },
+    "faqs": {
+      "eyebrow": "QnA",
+      "title": "Frequently asked questions",
+      "items": {
+        "onsiteTicket": {
+          "question": "Q. Can I buy a ticket on site on the day of the event?",
+          "answer": "No. All tickets are sold online only and cannot be purchased on site on the day of the event."
+        },
+        "groupPurchase": {
+          "question": "Q. Can I buy tickets as a group?",
+          "answer": "There is no separate group purchase option, but you can buy up to 10 tickets at a time. Please split larger orders into several purchases."
+        },
+        "attendanceCertificate": {
+          "question": "Q. How do I get a certificate of attendance?",
+          "answer": "On the ticket detail screen of the site you booked through, tap the [⋮] button to the right of the ticket to issue a certificate of attendance."
+        }
+      }
+    },
+    "lastEvent": {
+      "eyebrow": "2025 Droid Knights",
+      "title": "Look back at the last event",
+      "videoTitle": "Droid Knights 2025 recap"
+    },
+    "terms": {
+      "share": {
+        "title": "Curious about a conference built for Android developers?<br></br>Come and meet Droid Knights 2026.",
+        "button": "Share it",
+        "copied": "The link has been copied to your clipboard."
+      },
+      "codeOfConduct": {
+        "title": "Please promise to help make this event<br></br>one that every attendee can join without discrimination.",
+        "button": "Read the code of conduct →"
+      }
+    },
+    "footer": {
+      "copyright": "Copyright DroidKnights 2026",
+      "rights": "All Rights Reserved"
+    }
+  }
+}

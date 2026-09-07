@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 const SOCIALS = [
@@ -7,13 +10,15 @@ const SOCIALS = [
 ];
 
 export function Footer() {
+  const t = useTranslations("app.2026.footer");
+
   return (
-    <footer className="w-full border-t border-white/10 bg-dk-surface">
+    <footer className="bg-dk-surface w-full border-t border-white/10">
       <div className="mx-auto flex max-w-[1366px] flex-col items-center justify-between gap-4 px-5 py-10 md:flex-row md:px-10">
-        <div className="flex items-center text-dk-muted">
-          <p className="text-sm">Copyright DroidKnights 2026</p>
+        <div className="text-dk-muted flex items-center">
+          <p className="text-sm">{t("copyright")}</p>
           <span className="mx-3 text-sm opacity-40">|</span>
-          <p className="text-sm">All Rights Reserved</p>
+          <p className="text-sm">{t("rights")}</p>
         </div>
         <div className="flex items-center gap-x-3">
           {SOCIALS.map((s) => (

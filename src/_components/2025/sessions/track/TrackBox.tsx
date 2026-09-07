@@ -1,13 +1,17 @@
+import { useTranslations } from "next-intl";
+
 import { COUNT_BEFORE_LUNCH, tracks } from "@/src/_models/2025/sessions/Tracks";
 
 import { SessionItem } from "./SessionItem";
 
 export const TrackBox = () => {
+  const t = useTranslations("app.2025.sessions");
+
   return (
     <div className="w-full">
-      <Breaktime title="행사 등록" time="09:30 - 10:40" />
+      <Breaktime title={t("registration")} time={t("registrationTime")} />
       <DividerSession />
-      <Breaktime title="KEYNOTE" time="10:40 - 11:00" className="bg-white/10" />
+      <Breaktime title={t("keynote")} time={t("keynoteTime")} className="bg-white/10" />
       <DividerSession />
       <div className="grid grid-cols-2 gap-x-0.5">
         {tracks[0].map((session, index) => (
@@ -19,7 +23,7 @@ export const TrackBox = () => {
             </div>
             {index === COUNT_BEFORE_LUNCH - 1 && (
               <div className="col-span-2">
-                <Breaktime title="점심 시간" time="12:35 - 13:55" />
+                <Breaktime title={t("lunch")} time={t("lunchTime")} />
                 <DividerSession />
               </div>
             )}
