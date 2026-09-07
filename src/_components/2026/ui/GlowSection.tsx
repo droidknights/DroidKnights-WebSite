@@ -41,14 +41,12 @@ export function GlowSection({
 }: GlowSectionProps) {
   return (
     <section className={`relative overflow-hidden ${TONE[tone]} ${className ?? ""}`}>
-      {glow !== "none" && (
-        <div className="pointer-events-none absolute inset-0" style={{ background: GLOW[glow] }} />
-      )}
+      {glow !== "none" && <div className="pointer-events-none absolute inset-0" style={{ background: GLOW[glow] }} />}
       {sparkles &&
         SPARKS.map((s, i) => (
           <Sparkle
             key={i}
-            className="pointer-events-none absolute text-dk-lavender"
+            className="text-dk-lavender pointer-events-none absolute"
             style={{
               top: s.top,
               left: s.left,

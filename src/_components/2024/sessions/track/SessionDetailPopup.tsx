@@ -29,7 +29,7 @@ export function SessionDetailPopup({ session, close }: { session: Session; close
   return (
     <Portal selector="#popup-root">
       <div
-        className="fixed left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-black/50"
+        className="fixed top-0 left-0 z-10 flex h-full w-full items-center justify-center bg-black/50"
         onClick={close}
       >
         <div
@@ -38,7 +38,7 @@ export function SessionDetailPopup({ session, close }: { session: Session; close
         >
           <div className="flex justify-between">
             <p className="text-[27px] font-bold">{session.title}</p>
-            <div className="ml-10 mt-1 shrink-0 cursor-pointer" onClick={close}>
+            <div className="mt-1 ml-10 shrink-0 cursor-pointer" onClick={close}>
               <img src="/2024/close.png" alt="close" />
             </div>
           </div>
