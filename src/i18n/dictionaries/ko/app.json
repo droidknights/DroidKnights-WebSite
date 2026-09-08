@@ -230,6 +230,18 @@
       "mapTitle": "행사장 지도",
       "directions": "가는 길 찾아보기 →"
     },
+    "sponsor": {
+      "eyebrow": "SPONSOR",
+      "title": "함께하는 기업",
+      "subtitle": "드로이드나이츠 2026을 후원해주시는 기업들입니다.",
+      "logoAlt": "로고",
+      "levels": {
+        "PLATINUM": "PLATINUM",
+        "GOLD": "GOLD",
+        "SILVER": "SILVER",
+        "SPECIAL": "SPECIAL"
+      }
+    },
     "faqs": {
       "eyebrow": "QnA",
       "title": "자주 묻는 질문",

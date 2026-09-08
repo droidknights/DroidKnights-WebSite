@@ -230,6 +230,18 @@
       "mapTitle": "Venue map",
       "directions": "Get directions →"
     },
+    "sponsor": {
+      "eyebrow": "SPONSOR",
+      "title": "Our sponsors",
+      "subtitle": "Companies supporting Droid Knights 2026.",
+      "logoAlt": "logo",
+      "levels": {
+        "PLATINUM": "PLATINUM",
+        "GOLD": "GOLD",
+        "SILVER": "SILVER",
+        "SPECIAL": "SPECIAL"
+      }
+    },
     "faqs": {
       "eyebrow": "QnA",
       "title": "Frequently asked questions",

@@ -8,6 +8,7 @@ import { Faqs } from "./Faqs";
 import { Footer } from "./Footer";
 import { LastEvent } from "./LastEvent";
 import { Location } from "./Location";
+import { Sponsors } from "./Sponsors";
 import { Terms } from "./Terms";
 
 export function Home2026() {
@@ -22,6 +23,7 @@ export function Home2026() {
       <main>
         <Description />
         <Location />
+        <Sponsors />
         <Faqs />
         <LastEvent />
         <Terms />
