@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 
 import { LocaleSwitcher } from "../common/LocaleSwitcher";
 
@@ -41,7 +42,17 @@ function Header() {
     <header className="bg-dk-space/70 fixed top-0 z-50 h-[77px] w-full border-b border-white/5 backdrop-blur-[20px]">
       <div className="mx-auto flex h-full max-w-[1366px] items-center justify-between px-5 md:px-10">
         <Image src="/2026/logo.png" alt={t("logoAlt")} width={94} height={36} />
-        <LocaleSwitcher />
+        <div className="flex items-center gap-2 md:gap-3">
+          <LocaleSwitcher />
+          <Link
+            href="https://ticketa.co/event/2o8rdpls"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded bg-white px-4 py-2 text-xs font-semibold text-black transition-opacity hover:opacity-90 md:px-3 md:py-2.5 md:text-sm"
+          >
+            {t("ticket")}
+          </Link>
+        </div>
       </div>
     </header>
   );

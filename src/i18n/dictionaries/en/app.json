@@ -213,7 +213,8 @@
     },
     "header": {
       "logoAlt": "Droid Knights 2026 logo",
-      "bannerAlt": "Droid Knights 2026 banner"
+      "bannerAlt": "Droid Knights 2026 banner",
+      "ticket": "Buy a ticket→"
     },
     "description": {
       "eyebrow": "Android Conference",

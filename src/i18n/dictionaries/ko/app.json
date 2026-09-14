@@ -213,7 +213,8 @@
     },
     "header": {
       "logoAlt": "드로이드나이츠 2026 로고",
-      "bannerAlt": "드로이드나이츠 2026 배너"
+      "bannerAlt": "드로이드나이츠 2026 배너",
+      "ticket": "티켓사러 가기→"
     },
     "description": {
       "eyebrow": "Android Conference",
