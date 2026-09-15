@@ -221,6 +221,88 @@
       "title": "대한민국 최대<br></br>안드로이드 개발자 컨퍼런스<br></br><highlight>드로이드나이츠 2026</highlight>",
       "subtitle": "주니어부터 시니어까지 모두가 공감하고<br></br>즐길 수 있는 지식의 장으로 만들고자 합니다."
     },
+    "sessions": {
+      "eyebrow": "SESSION",
+      "title": "올해의 세션",
+      "subtitle": "현업에서 마주친 문제와 그것을 풀어낸 과정을 12개 세션에 담았습니다.",
+      "english": "English",
+      "close": "닫기",
+      "apply": "지원하기",
+      "items": {
+        "lazyRow": {
+          "title": "이 UI, LazyRow 로는 안 됩니다",
+          "speaker": "윤여준",
+          "org": "네이버",
+          "summary": "LazyRow로는 만들 수 없었던 3D 캐러셀을 Compose로 구현한 실전기입니다.<br></br>리컴포지션 0으로 매 프레임을 움직이고, 3D 변환 UI의 어긋난 터치 판정을 바로잡고, Lazy 없는 화면에서 Paging3를 처리한 과정을 다룹니다."
+        },
+        "crashToPr": {
+          "title": "크래시 추적에 뺏긴 멘탈, AI가 올려준 PR로 되찾기",
+          "speaker": "배필주",
+          "org": "Kurly",
+          "summary": "Firebase·BigQuery로 유저 진입 경로를 모으고 사내 코드 기반 LLM으로 크래시를 자동 분석합니다.<br></br>AI가 찾아낸 원인과 수정 코드가 GitHub Actions Draft PR로 올라오기까지의 파이프라인 구축기입니다."
+        },
+        "aiQa": {
+          "title": "쏟아지는 QA, AI로 살아남기",
+          "speaker": "박동민",
+          "org": "Buzzvil",
+          "summary": "MCP와 CLI, 페르소나와 서브 에이전트를 거쳐 AI가 에뮬레이터를 직접 제어하며 QA를 수행하게 만듭니다.<br></br>자체 QA부터 수정까지 이어지는 프로세스와 실제 성과를 공유합니다."
+        },
+        "workflowAx": {
+          "title": "Workflow AX 적용기 — 자동 정책 정리부터 E2E까지",
+          "speaker": "강래민 · 백다연",
+          "org": "여기어때컴퍼니",
+          "summary": "하네스로 workflow의 틀을 잡고, 직접 만든 컨벤션 게이트로 AI가 팀 규칙을 지키게 합니다.<br></br>LLM Wiki로 정책을 자동 정리하고 UnitTest·E2E·Roborazzi로 검증 프로세스를 세운 실측 결과까지 나눕니다."
+        },
+        "webviewLoading": {
+          "title": "느린 네트워크와 저사양 디바이스 사용자를 위한 웹뷰 로딩 시간 개선기",
+          "speaker": "김기문",
+          "org": "Delivery Hero",
+          "summary": "웹뷰 생성 비용과 렌더링 최적화 기법이 저사양 디바이스와 느린 네트워크에서 왜 한계에 부딪히는지 짚습니다.<br></br>네이티브에서 요청을 가로채는 방식을 거쳐 앱 안에 로컬 웹 서버까지 구축한 과정을 공유합니다."
+        },
+        "a2ui": {
+          "title": "Android A2UI: Jetpack Compose 기반의 안전한 AI UI 렌더링",
+          "speaker": "박제창",
+          "org": "GDE Dart-Flutter",
+          "summary": "AI 에이전트가 안전하게 UI를 그리도록 돕는 선언형 프로토콜 A2UI를 소개합니다.<br></br>Compose 렌더러를 직접 구현하며 상태 매핑과 스트리밍 응답을 다루고, 기존 SDUI·Remote Compose와 비교합니다."
+        },
+        "haptic": {
+          "title": "선언형 햅틱 라이브러리 “진동”을 소개합니다",
+          "speaker": "이현우",
+          "org": "Toss",
+          "summary": "햅틱은 아직 선언형으로 표현하기 어려운 영역입니다.<br></br>Compose Multiplatform용 햅틱 라이브러리 ‘진동’을 소개하고, DSL로 패턴을 표현하는 방법과 Compose Runtime 기반 상태·생명주기 연동을 살펴봅니다."
+        },
+        "overseasCareer": {
+          "title": "안드로이드 개발자로 해외 기업에서 일하기",
+          "speaker": "엄재웅",
+          "org": "RevenueCat",
+          "summary": "5년간 해외 기업에서 일한 경험을 나눕니다.<br></br>안드로이드 개발자가 본 해외 취업 시장과 면접 과정, 업무 문화, 완전 재택 환경과 해외 출장까지 다룹니다.<br></br>연차와 사전지식 없이 누구나 편하게 들으실 수 있습니다."
+        },
+        "baseline": {
+          "title": "baseline으로 마이그레이션, 리팩토링 안전하게 맡기기",
+          "speaker": "안성용",
+          "org": "네이버웹툰",
+          "summary": "AI로 업데이트와 리팩토링은 수월해졌지만 Manifest나 리소스의 변화는 배포 후에야 드러납니다.<br></br>baseline으로 의도치 않은 변경을 사전에 막고, AI가 만든 코드의 방향을 판단할 기준을 세웁니다."
+        },
+        "biometric": {
+          "title": "Engineering Biometric UX Across Android Versions",
+          "speaker": "Bunjiro Miyoshi",
+          "org": "MIXI, Inc.",
+          "summary": "FingerprintManager에서 BiometricPrompt까지 진화한 생체인증 API를 짚고, Jetpack Biometric이 가리지 못하는 OS·OEM 차이를 다룹니다.<br></br>등록 변경과 잠금, 취소, Keystore 무효화가 사용자 흐름에 어떻게 반영돼야 하는지 살펴봅니다."
+        },
+        "audioPlugin": {
+          "title": "Building Audio Plugin Ecosystem for Android in 2026",
+          "speaker": "Atsushi Enomoto",
+          "org": "androidaudioplugin.org",
+          "summary": "안드로이드에는 플랫폼 차원의 공통 오디오 플러그인 포맷이 없어 직접 만들어야 합니다.<br></br>선택할 수 있는 기술 옵션들과, 지금의 생태계를 만들어오기까지의 과정을 이야기합니다."
+        },
+        "resumeFeedback": {
+          "title": "이력서 공개처형",
+          "speaker": "운영진",
+          "org": "DroidKnights",
+          "summary": "‘이력서 공개처형’은 여러분의 이력서와 포트폴리오를 드로이드나이츠 운영진이 현장에서 직접 검토하고 피드백하는 세션입니다.<br></br>지난 2년간 사이드 프로그램으로 진행하며 가장 뜨거운 반응을 받아, 올해는 메인 트랙 정규 세션으로 자리를 옮겼습니다.<br></br>선정되신 분의 이력서를 화면에 띄운 상태로, 청중이 지켜보는 가운데 피드백을 진행합니다. 이름처럼 날카롭게, 그러나 성장을 위한 피드백을 드립니다.<br></br>이력서를 계속 고쳐 쓰는데 무엇이 문제인지 모르겠는 분, 내 커리어를 어떻게 설명해야 할지 막막한 분, 가감 없는 피드백을 정면으로 받아볼 각오가 된 분께 권합니다.<br></br>3명을 선정하며, 선정되신 분께는 결제하신 티켓 금액을 환불해 드립니다(굿즈 제외). 티켓은 조기 매진될 수 있으니 먼저 구매해 주세요.<br></br>지원 기한은 2026년 10월 12일(월) 23:59이며, 선정 결과는 이메일로 개별 안내드립니다."
+        }
+      }
+    },
     "location": {
       "eyebrow": "Location",
       "title": "11월 2일, 과학기술컨벤션센터에서 만나요",

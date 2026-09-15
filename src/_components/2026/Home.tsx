@@ -9,6 +9,7 @@ import { Faqs } from "./Faqs";
 import { Footer } from "./Footer";
 import { LastEvent } from "./LastEvent";
 import { Location } from "./Location";
+import { Sessions } from "./Sessions";
 import { Sponsors } from "./Sponsors";
 import { Terms } from "./Terms";
 
@@ -23,6 +24,7 @@ export function Home2026() {
       </div>
       <main>
         <Description />
+        <Sessions />
         <Location />
         <Sponsors />
         <Faqs />
