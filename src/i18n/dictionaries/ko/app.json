@@ -364,7 +364,7 @@
         },
         "groupPurchase": {
           "question": "Q. 단체로 티켓을 구매할 수 있나요?",
-          "answer": "별도의 단체구매 기능은 제공하지 않지만, 한 번에 최대 10장까지 구매하실 수 있습니다. 여러번 나누어 구매해 주세요."
+          "answer": "티켓은 1인 1매까지만 예매할 수 있습니다. 2인 이상 단체 예매가 필요하시면 droidknights.cat+ticket@gmail.com 으로 문의해 주세요."
         },
         "attendanceCertificate": {
           "question": "Q. 참석확인증은 어떻게 발급받을 수 있나요?",
