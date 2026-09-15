@@ -228,6 +228,10 @@
       "english": "English",
       "close": "Close",
       "apply": "Apply",
+      "onlySite": {
+        "badge": "Only on site",
+        "body": "No talks will be recorded or published.<br></br>All 12 sessions happen once, in the room."
+      },
       "items": {
         "lazyRow": {
           "title": "This UI? LazyRow Won't Cut It",
@@ -308,9 +312,18 @@
       "title": "Put your resume <highlight>on the big screen</highlight>",
       "description": "The DroidKnights organizers review your resume and portfolio live, on the spot.<br></br>After two years as our most talked-about side programme, it moves to the main track this year.",
       "specs": {
-        "selection": { "label": "Pick", "value": "3 people" },
-        "benefit": { "label": "Perk", "value": "Ticket refunded (goods excluded)" },
-        "deadline": { "label": "Due", "value": "12 Oct 2026 (Mon) 23:59 KST" }
+        "selection": {
+          "label": "Pick",
+          "value": "3 people"
+        },
+        "benefit": {
+          "label": "Perk",
+          "value": "Ticket refunded (goods excluded)"
+        },
+        "deadline": {
+          "label": "Due",
+          "value": "12 Oct 2026 (Mon) 23:59 KST"
+        }
       },
       "apply": "Apply",
       "note": "Buy your ticket before it sells out. If you are selected, we refund what you paid."
@@ -341,6 +354,10 @@
       "eyebrow": "QnA",
       "title": "Frequently asked questions",
       "items": {
+        "recording": {
+          "question": "Q. Will the talks be published as videos later?",
+          "answer": "No. From this year on we do not record or publish session videos. Sessions can only be heard on site."
+        },
         "onsiteTicket": {
           "question": "Q. Can I buy a ticket on site on the day of the event?",
           "answer": "No. All tickets are sold online only and cannot be purchased on site on the day of the event."

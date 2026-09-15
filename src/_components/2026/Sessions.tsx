@@ -9,6 +9,7 @@ import { ENGLISH_SESSION_KEYS, SESSION_APPLY_LINKS, SESSION_KEYS, SessionKey } f
 import { GlowSection } from "./ui/GlowSection";
 import { Portal } from "./ui/Portal";
 import { SectionHeading } from "./ui/SectionHeading";
+import { Sparkle } from "./ui/Sparkle";
 
 // Only the detail popup carries the hero's blue→lavender clip — running it on all 12 cards,
 // where the title stands alone without a summary, reads as noise.
@@ -20,7 +21,8 @@ export function Sessions() {
   return (
     <GlowSection tone="space" glow="blue" className="border-t border-white/5">
       <div className="px-6 py-24 md:px-10 md:py-40">
-        <SectionHeading eyebrow={t("eyebrow")} title={t("title")} sub={t("subtitle")} className="mb-12 md:mb-20" />
+        <SectionHeading eyebrow={t("eyebrow")} title={t("title")} sub={t("subtitle")} className="mb-8 md:mb-10" />
+        <OnlyOnSite />
         <div className="mx-auto grid max-w-[1366px] gap-4 sm:grid-cols-2 md:gap-5 lg:grid-cols-4">
           {SESSION_KEYS.map((key) => (
             <SessionCard key={key} sessionKey={key} />
@@ -28,6 +30,23 @@ export function Sessions() {
         </div>
       </div>
     </GlowSection>
+  );
+}
+
+// 올해부터 발표 영상을 남기지 않는다. 세션 목록 바로 위에 두어 12개 세션 전체에 걸리도록 한다.
+function OnlyOnSite() {
+  const t = useTranslations("app.2026.sessions.onlySite");
+
+  return (
+    <div className="mb-12 text-center md:mb-20">
+      <span className="border-dk-lavender/40 bg-dk-lavender/10 text-dk-lavender font-display inline-flex items-center gap-2.5 rounded-full border px-5 py-2.5 text-xs font-semibold tracking-[0.2em] uppercase md:text-sm">
+        <Sparkle className="h-3.5 w-3.5 md:h-4 md:w-4" />
+        {t("badge")}
+      </span>
+      <p className="font-kr text-dk-subtle mx-auto mt-[18px] max-w-[760px] text-base leading-[1.7] md:text-lg">
+        {t.rich("body", { br: () => <br /> })}
+      </p>
+    </div>
   );
 }
 
