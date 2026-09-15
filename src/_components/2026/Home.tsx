@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { LocaleSwitcher } from "../common/LocaleSwitcher";
 
+import { CallForResume } from "./CallForResume";
 import { Description } from "./Description";
 import { Faqs } from "./Faqs";
 import { Footer } from "./Footer";
@@ -25,6 +26,7 @@ export function Home2026() {
       <main>
         <Description />
         <Sessions />
+        <CallForResume />
         <Location />
         <Sponsors />
         <Faqs />
