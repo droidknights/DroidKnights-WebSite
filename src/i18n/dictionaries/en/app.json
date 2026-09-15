@@ -221,6 +221,100 @@
       "title": "Korea's largest<br></br>conference for Android developers<br></br><highlight>Droid Knights 2026</highlight>",
       "subtitle": "A place of shared knowledge that everyone can enjoy,<br></br>from juniors to seniors."
     },
+    "sessions": {
+      "eyebrow": "SESSION",
+      "title": "This Year's Sessions",
+      "subtitle": "Twelve sessions on problems met in production and how they were solved.",
+      "english": "English",
+      "close": "Close",
+      "apply": "Apply",
+      "items": {
+        "lazyRow": {
+          "title": "This UI? LazyRow Won't Cut It",
+          "speaker": "Yeojun Yoon",
+          "org": "NAVER",
+          "summary": "A field report on building a 3D carousel in Compose that LazyRow simply could not handle.<br></br>Covers driving every frame with zero recomposition, fixing misaligned touch targets on 3D-transformed UI, and running Paging3 on a screen without a Lazy list."
+        },
+        "crashToPr": {
+          "title": "From Crash Triage to AI-Authored PRs",
+          "speaker": "Pilju Bae",
+          "org": "Kurly",
+          "summary": "Collects user entry paths through Firebase and BigQuery, then analyses crashes automatically with an in-house code-aware LLM.<br></br>A build log of the pipeline that turns the cause and the fix into a GitHub Actions draft PR."
+        },
+        "aiQa": {
+          "title": "Surviving the QA Flood with AI",
+          "speaker": "Dongmin Park",
+          "org": "Buzzvil",
+          "summary": "From MCP versus CLI to personas and sub-agents, ending with AI driving the emulator directly to run QA.<br></br>Shares the process that runs from self-QA through to the fix, along with the results it produced."
+        },
+        "workflowAx": {
+          "title": "Workflow AX in Practice — From Policy Automation to E2E",
+          "speaker": "Raemin Kang · Dayeon Baek",
+          "org": "GC Company",
+          "summary": "Shapes the workflow with a harness and holds AI to the team's conventions through a custom convention gate.<br></br>Covers organising policy automatically with an LLM wiki and building a verification process with unit tests, E2E and Roborazzi — with measured results."
+        },
+        "webviewLoading": {
+          "title": "Cutting WebView Load Time for Slow Networks and Low-End Devices",
+          "speaker": "Kimun Kim",
+          "org": "Delivery Hero",
+          "summary": "Examines why WebView creation cost and rendering optimisations hit a wall on low-end devices and slow networks.<br></br>Walks through intercepting requests natively and ultimately running a local web server inside the app."
+        },
+        "a2ui": {
+          "title": "Android A2UI: Safe AI-Driven UI Rendering on Jetpack Compose",
+          "speaker": "Jaichang Park",
+          "org": "GDE Dart-Flutter",
+          "summary": "Introduces A2UI, a declarative protocol that lets AI agents render UI safely.<br></br>Builds a Compose renderer from scratch, covering state mapping and streaming responses, and compares it with SDUI and Remote Compose."
+        },
+        "haptic": {
+          "title": "Introducing Jindong, a Declarative Haptics Library",
+          "speaker": "Hyunwoo Lee",
+          "org": "Toss",
+          "summary": "Haptics remain one of the hardest things to express declaratively.<br></br>Introduces Jindong, a haptics library for Compose Multiplatform, and looks at expressing patterns through a DSL and wiring state and lifecycle through the Compose runtime."
+        },
+        "overseasCareer": {
+          "title": "Working Abroad as an Android Developer",
+          "speaker": "Jaewoong Eum",
+          "org": "RevenueCat",
+          "summary": "Five years of working at companies outside Korea.<br></br>Covers the overseas job market as an Android developer sees it, the interview process, work culture, fully remote setups and business travel.<br></br>No experience level or prior knowledge required."
+        },
+        "baseline": {
+          "title": "Delegating Migration and Refactoring Safely with Baselines",
+          "speaker": "Seongyong An",
+          "org": "NAVER WEBTOON",
+          "summary": "AI made library updates and refactoring easier, but changes to the manifest or resources only surface after release.<br></br>Uses baselines to catch unintended changes up front and sets a standard for judging the direction of AI-generated code."
+        },
+        "biometric": {
+          "title": "Engineering Biometric UX Across Android Versions",
+          "speaker": "Bunjiro Miyoshi",
+          "org": "MIXI, Inc.",
+          "summary": "Traces the biometric APIs from FingerprintManager to BiometricPrompt and the OS and OEM differences Jetpack Biometric cannot hide.<br></br>Looks at how enrollment changes, lockout, cancellation and Keystore invalidation should shape user flows."
+        },
+        "audioPlugin": {
+          "title": "Building Audio Plugin Ecosystem for Android in 2026",
+          "speaker": "Atsushi Enomoto",
+          "org": "androidaudioplugin.org",
+          "summary": "Android has no common audio plugin format at the platform level, so we have to build one ourselves.<br></br>Discusses the technical options available and how the ecosystem has been built up so far."
+        },
+        "resumeFeedback": {
+          "title": "Resume Feedback",
+          "speaker": "Organizers",
+          "org": "DroidKnights",
+          "summary": "Resume Feedback is a session where the DroidKnights organizers review your resume and portfolio live, on the spot.<br></br>After two years as a side programme — and the strongest response of any — it moves to the main track this year.<br></br>The selected resume goes up on screen and the feedback happens with the audience watching. Sharp and direct, but always aimed at growth.<br></br>For anyone who keeps rewriting their resume without knowing what is wrong, who struggles to put their career into words, or who is ready to take unfiltered feedback head-on.<br></br>Three people are selected, and the ticket they paid for is refunded (goods excluded). Tickets may sell out, so buy yours first.<br></br>Applications close on Monday 12 October 2026 at 23:59 KST, and results are sent individually by email."
+        }
+      }
+    },
+    "callForResume": {
+      "eyebrow": "Call for Resume",
+      "title": "Put your resume <highlight>on the big screen</highlight>",
+      "description": "The DroidKnights organizers review your resume and portfolio live, on the spot.<br></br>After two years as our most talked-about side programme, it moves to the main track this year.",
+      "specs": {
+        "selection": { "label": "Pick", "value": "3 people" },
+        "benefit": { "label": "Perk", "value": "Ticket refunded (goods excluded)" },
+        "deadline": { "label": "Due", "value": "12 Oct 2026 (Mon) 23:59 KST" }
+      },
+      "apply": "Apply",
+      "note": "Buy your ticket before it sells out. If you are selected, we refund what you paid."
+    },
     "location": {
       "eyebrow": "Location",
       "title": "See you on November 2 at the Science & Technology Convention Center",

@@ -4,11 +4,13 @@ import Link from "next/link";
 
 import { LocaleSwitcher } from "../common/LocaleSwitcher";
 
+import { CallForResume } from "./CallForResume";
 import { Description } from "./Description";
 import { Faqs } from "./Faqs";
 import { Footer } from "./Footer";
 import { LastEvent } from "./LastEvent";
 import { Location } from "./Location";
+import { Sessions } from "./Sessions";
 import { Sponsors } from "./Sponsors";
 import { Terms } from "./Terms";
 
@@ -23,6 +25,8 @@ export function Home2026() {
       </div>
       <main>
         <Description />
+        <Sessions />
+        <CallForResume />
         <Location />
         <Sponsors />
         <Faqs />
