@@ -234,7 +234,7 @@
       },
       "items": {
         "lazyRow": {
-          "title": "이 UI, LazyRow 로는 안 됩니다",
+          "title": "이 UI, LazyRow 로는 안 됩니다: 커스텀 3D 캐러셀 개발기",
           "speaker": "윤여준",
           "org": "네이버",
           "summary": "LazyRow로는 만들 수 없었던 3D 캐러셀을 Compose로 구현한 실전기입니다.<br></br>리컴포지션 0으로 매 프레임을 움직이고, 3D 변환 UI의 어긋난 터치 판정을 바로잡고, Lazy 없는 화면에서 Paging3를 처리한 과정을 다룹니다."
