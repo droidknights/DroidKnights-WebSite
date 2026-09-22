@@ -40,7 +40,7 @@ export function GlowSection({
   className,
 }: GlowSectionProps) {
   return (
-    <section className={`relative overflow-hidden ${TONE[tone]} ${className ?? ""}`}>
+    <section className={`relative overflow-clip ${TONE[tone]} ${className ?? ""}`}>
       {glow !== "none" && <div className="pointer-events-none absolute inset-0" style={{ background: GLOW[glow] }} />}
       {sparkles &&
         SPARKS.map((s, i) => (
