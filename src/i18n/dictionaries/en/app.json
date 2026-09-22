@@ -228,6 +228,20 @@
       "english": "English",
       "close": "Close",
       "apply": "Apply",
+      "timetable": {
+        "track": "Track {number}",
+        "duration": "{minutes} min",
+        "halls": {
+          "main": "Main Hall",
+          "sub": "Sub Hall"
+        },
+        "breaks": {
+          "registration": "Registration",
+          "keynote": "Keynote",
+          "break": "Break",
+          "lunch": "Lunch"
+        }
+      },
       "onlySite": {
         "badge": "Only on site",
         "body": "No talks will be recorded or published.<br></br>All 12 sessions happen once, in the room."
