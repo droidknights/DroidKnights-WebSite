@@ -20,7 +20,13 @@ export const platinumSponsors: Sponsor[] = [
   },
 ];
 
-export const goldSponsors: Sponsor[] = [];
+export const goldSponsors: Sponsor[] = [
+  {
+    logo: "jetbrains.png",
+    link: "https://www.jetbrains.com",
+    name: "JetBrains",
+  },
+];
 
 export const silverSponsors: Sponsor[] = [];
 
